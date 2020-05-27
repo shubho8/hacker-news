@@ -6,7 +6,7 @@ class NewsController {
 
   public function stories( $type ) {
     $output = get_hacker_stories($type);
-    for($i=100;$i<110;$i++){
+    for($i=130;$i<140;$i++){
       get_comments($output[$i]->story_id,$output[$i]->story_id);
     }
     return array(

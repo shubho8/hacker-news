@@ -1,15 +1,39 @@
 
+{% raw %}
+  
+   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#example').DataTable({
+    "bLengthChange": false,
+  });
+});
+
+</script>
+{% endraw %}
+
+
 {% if name %}
   <h3>Stories by {{ name }} </h3>
 {% endif %}
 
-<table id="example" class="display" style="width:100%">
+<table id="example" style="width:100%">
+<thead>
  <tr>
  <th>Title</th>
  <th>Points</th>
   <th>Comments</th>
   <th>Author</th>
   </tr>
+  </thead>
+  <tbody>
 {% for news in items %}
 <tr>
   <td><img src="{{ url('<front>') }}themes/businessplus_lite/images/forum-icon.png" width="24" height="24">&nbsp;&nbsp;&nbsp;&nbsp;
@@ -27,4 +51,5 @@
 
 
 {% endfor %}
+</tbody>
 </table>
