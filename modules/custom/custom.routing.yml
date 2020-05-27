@@ -33,4 +33,11 @@ custom.author_stories:
   requirements:
     _permission: 'access content'
 
+custom.author_comments:
+  path: '/author/comments/{name}'
+  defaults:
+    _controller: '\Drupal\custom\Controller\NewsController::authorComments'
+  requirements:
+    _permission: 'access content'
+
 

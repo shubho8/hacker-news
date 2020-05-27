@@ -3,20 +3,7 @@
   
    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
   
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 
-
-
-
-<script type="text/javascript">
-$(document).ready(function(){
-  $('#example').DataTable({
-    "bLengthChange": false,
-  });
-});
-
-</script>
 {% endraw %}
 
 
@@ -24,7 +11,7 @@ $(document).ready(function(){
   <h3>Stories by {{ name }} </h3>
 {% endif %}
 
-<table id="example" style="width:100%">
+<table id="story-table">
 <thead>
  <tr>
  <th>Title</th>
@@ -44,7 +31,7 @@ $(document).ready(function(){
   </td>
   <td><a href="{{ url('<front>') }}comments/{{ news.story_id }}">{{ news.count }} </a>
   <td>
-    <span>By {{ news.author }}</span></br>
+    <span><a href="{{ url('<front>') }}author/{{ news.author }}">By {{ news.author }}</a></span></br>
     <span>Time {{ news.time |date('d/m/Y H:i:s')}}</span>
  </td>
 </tr>

@@ -2,33 +2,25 @@
  {% raw %}
   
    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 
-
-
-<script type="text/javascript">
-$(document).ready(function(){
-  $('#example').DataTable({
-    "bLengthChange": false,
-    "bSort" : false
-  });
-});
-
-</script>
 {% endraw %}
  
+ {% if name %}
+  <h3>Comments by {{ name }} </h3>
+{% endif %}
+
+
  {% for story in story_data %}
 <div><a href="{{ story.url }}" target="_blank"><h3>{{ story.title }} </h3></a> 
     <span>{{ story.score }} Points |</span>
-    <span>By {{ story.author }} |</span>
+    <span><a href="{{ url('<front>') }}author/{{ story.author }}">By {{ story.author }} |</a></span>
     <span>Time {{ story.time |date('d/m/Y H:i:s')}} | </span>
     <span><a href="{{ url('<front>') }}comments/{{ story.story_id }}">{{ story.count }} Comments</a></span></br></br>
 </div>
 
 {% endfor %}
 
-<table id="example" class="display" style="width:100%">
+<table id="comment-table">
 <thead>
  <tr><th>Comments</th>
  </tr>
@@ -36,7 +28,7 @@ $(document).ready(function(){
 <tbody>
 {% for comment in items %}
 <tr>  <td>
-    <span><b>By {{ comment.author }} |</span>
+    <span><a href="{{ url('<front>') }}author/{{ comment.author }}"><b>By {{ comment.author }} |</a></span>
     <span>Time {{ comment.comment_time |date('d/m/Y H:i:s')}}</b></span></br>
   {{ comment.text| raw }}</td>
 </tr>

@@ -1,0 +1,9 @@
+
+custom_js:
+  version: 1.0
+  js:
+    js/custom.js: {}  
+    https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js: { type: external, minified: true }
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

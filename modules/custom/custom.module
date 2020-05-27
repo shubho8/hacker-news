@@ -2,6 +2,10 @@
 
 use Drupal\Core\Site\Settings;
 
+
+function custom_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'custom/custom_js';
+}
 /**
  * Implementing hook_theme().
  */
@@ -12,7 +16,7 @@ function custom_theme($existing, $type, $theme, $path) {
     ),
 
     'comments_list' => array(
-      'variables' => array('items' => array(), 'title' => '', 'story_data' => array())
+      'variables' => array('items' => array(), 'title' => '', 'story_data' => array(), 'name' => '')
     ),
 
     'homepage' => array(
@@ -146,7 +150,7 @@ function get_hacker_stories($type){
  */
 
 function get_comments($id, $story_id ){
-  $comments_table = 'top_stories_comments';
+  $comments_table = 'best_stories_comments';
   //echo $comments_table; die();
   $schema = [
     'fields' => [
@@ -211,12 +215,8 @@ function get_nested_comments($id){
     ->execute()
     ->fetchAll();
 
-    for($i=0;$i<count($comment_top);$i++){
-      if($comment_top[$i]->parent == $comment_top[$i]->story_id){
-        $level1[] = $comment_top[$i];
-      }
-    }
-    return $level1;
+    
+    return $comment_top;
    // echo '<pre>'; print_r($level1); die();
 
 }
@@ -265,7 +265,11 @@ function get_author_stories($name){
   $query->condition('author',$name,'=');
   $query->groupBy('story_id');
   $result = $query->execute()->fetchAll();
-  return $result;
+
+  for($i=0;$i<count($result);$i++){
+    $arr[] = (array)$result[$i];
+  }
+  return $arr;
 
 }
 
@@ -273,13 +277,17 @@ function get_author_stories($name){
  * This Function returns all comments under one author
  */
 function get_author_comments($name){
-  $author_story = db_select('hacker_stories', 't')
+  $comment_data = db_select('top_stories_comments', 't')
   ->fields('t')
-  ->condition('t.author',$name,'=')
+  ->condition('t.text','NULL','!=')
+  ->condition('author',$name,'=')
   ->execute()
   ->fetchAll();
 
-  return 24;
+  for($i=0;$i<count($comment_data);$i++){
+    $arr[] = (array)$comment_data[$i];
+  }
+  return $arr;
 
 }
 
