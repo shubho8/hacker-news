@@ -8,7 +8,7 @@ class NewsController {
     $output = get_hacker_stories($type);
     //db_drop_table('new_stories_comments');
     //echo '<pre>'; print_r($output); die();
-    for($i=0;$i<10;$i++){
+    for($i=8;$i<15;$i++){
       get_comments($output[$i]->story_id,$output[$i]->story_id);
     }
     return array(

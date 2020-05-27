@@ -1,6 +1,11 @@
 
 custom_js:
   version: 1.0
+  css:
+    theme:
+      css/custom.css: {}
+      https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css: { type: external }
+
   js:
     js/custom.js: {}  
     https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js: { type: external, minified: true }
