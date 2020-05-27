@@ -1,0 +1,1 @@
+table td{border:1px solid #eee;}table th,table td{vertical-align:middle;}img{display:inline-flex;align-items:center;justify-content:center;background-color:#dbdbdb;color:yellow;min-width:2em;border-radius:50%;vertical-align:middle;}img:before{content:'';float:left;width:auto;padding-bottom:100%;}

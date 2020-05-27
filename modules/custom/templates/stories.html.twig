@@ -1,0 +1,30 @@
+
+{% if name %}
+  <h3>Stories by {{ name }} </h3>
+{% endif %}
+
+<table id="example" class="display" style="width:100%">
+ <tr>
+ <th>Title</th>
+ <th>Points</th>
+  <th>Comments</th>
+  <th>Author</th>
+  </tr>
+{% for news in items %}
+<tr>
+  <td><img src="{{ url('<front>') }}themes/businessplus_lite/images/forum-icon.png" width="24" height="24">&nbsp;&nbsp;&nbsp;&nbsp;
+  <b><a href="{{ news.url }}" target="_blank">{{news.title}}</a></b> 
+  </td>
+
+  <td>{{ news.score }}
+  </td>
+  <td><a href="{{ url('<front>') }}comments/{{ news.story_id }}">{{ news.count }} </a>
+  <td>
+    <span>By {{ news.author }}</span></br>
+    <span>Time {{ news.time |date('d/m/Y H:i:s')}}</span>
+ </td>
+</tr>
+
+
+{% endfor %}
+</table>

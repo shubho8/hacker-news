@@ -1,0 +1,19 @@
+<h2>User Details</h2>
+<table id="example" class="display" style="width:100%">
+ <tr>
+ <th>User</th>
+ <th>Created</th>
+  <th>Karma</th>
+  <th>Stories</th>
+  <th>Comments</th>
+  </tr>
+{% for user in items %}
+<tr>
+  <td>{{user.id}}</td>
+  <td>{{ user.created  |date('d/m/Y H:i:s')}}</td>
+  <td>{{ user.karma }}</td>
+  <td>{{user.story_count}}&nbsp;&nbsp;&nbsp;<a href="{{ url('<front>') }}author/stories/{{user.id}}">View All</a>
+  <td>{{user.comment_count}}&nbsp;&nbsp;&nbsp;<a href="{{ url('<front>') }}author/comments/{{user.id}}"> View All</a>
+</tr>
+{% endfor %}
+</table>

@@ -1,0 +1,86 @@
+<div class="container">
+<div class="col-md-12">
+<div class="row home-page">
+  <div class="col-md-4">
+   <div  class="top-icon">
+    <a href="{{ url('<front>') }}stories/top_stories"><img src="{{ url('<front>') }}themes/businessplus_lite/images/story.png" width="100" height="100"></a>
+    
+    </div>
+    <div class="story-name">Top Stories</div>
+    <table id="example" class="homepage-table">
+    
+    {% for news in top %}
+    <tr>
+      <td><img src="{{ url('<front>') }}themes/businessplus_lite/images/forum-icon.png" width="24" height="24">&nbsp;&nbsp;&nbsp;&nbsp;
+      <b><a href="{{ news.url }}" target="_blank">{{news.title}}</a></b> </br>
+      
+      <span>{{ news.score }} Points | </span>
+      <span><a href="{{ url('<front>') }}author/{{ news.author }}">By {{ news.author }} | </a></span>
+      <span>Time {{ news.time |date('d/m/Y H:i:s')}} | </span>
+      <span><a href="{{ url('<front>') }}comments/{{ news.story_id }}">{{ news.count }} Comments</a>
+      </span>  
+    </td>
+    </tr>
+    {% endfor %}
+    </table>
+    <div class="view-all">
+    <b> <a href="{{ url('<front>') }}stories/top_stories">View All</a></b>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+  <div  class="top-icon">
+    <a href="{{ url('<front>') }}stories/new_stories"><img src="{{ url('<front>') }}themes/businessplus_lite/images/story.png" width="100" height="100"></a>
+    
+    </div>
+    <div class="story-name">New Stories</div>
+    <table id="example" class="homepage-table">
+   
+    {% for news in new %}
+    <tr>
+      <td><img src="{{ url('<front>') }}themes/startupgrowth_lite/images/forum-icon.png" width="24" height="24">&nbsp;&nbsp;&nbsp;&nbsp;
+      <b><a href="{{ news.url }}" target="_blank">{{news.title}}</a></b> </br>
+      
+      <span>{{ news.score }} Points | </span>
+      <span><a href="{{ url('<front>') }}author/{{ news.author }}">By {{ news.author }} | </a></span>
+      <span>Time {{ news.time |date('d/m/Y H:i:s')}} | </span>
+      <span><a href="{{ url('<front>') }}comments/{{ news.story_id }}">{{ news.count }} Comments</a>
+      </span>  
+    </td>
+    </tr>
+    {% endfor %}
+    </table>
+     <div  class="view-all">
+    <b><a href="{{ url('<front>') }}stories/new_stories">View All</a></b>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+  <div  class="top-icon">
+    <a href="{{ url('<front>') }}stories/best_stories"><img src="{{ url('<front>') }}themes/businessplus_lite/images/story.png" width="100" height="100"></a>
+    </div>
+
+     <div class="story-name">Best Stories</div>
+    <table id="example" class="homepage-table">
+    {% for news in best %}
+    <tr>
+      <td><img src="{{ url('<front>') }}themes/startupgrowth_lite/images/forum-icon.png" width="24" height="24">&nbsp;&nbsp;&nbsp;&nbsp;
+      <b><a href="{{ news.url }}" target="_blank">{{news.title}}</a></b> </br>
+      
+      <span>{{ news.score }} Points | </span>
+      <span><a href="{{ url('<front>') }}author/{{ news.author }}">By {{ news.author }} | </a></span>
+      <span>Time {{ news.time |date('d/m/Y H:i:s')}} | </span>
+      <span><a href="{{ url('<front>') }}comments/{{ news.story_id }}">{{ news.count }} Comments</a>
+      </span>  
+    </td>
+    </tr>
+    {% endfor %}
+    </table>
+     <div class="view-all">
+    <b><a href="{{ url('<front>') }}stories/best_stories"">View All</a></b>
+    </div>
+  </div>
+</div>
+</div>
+</div>

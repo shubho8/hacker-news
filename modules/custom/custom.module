@@ -1,0 +1,285 @@
+<?php
+
+use Drupal\Core\Site\Settings;
+
+/**
+ * Implementing hook_theme().
+ */
+function custom_theme($existing, $type, $theme, $path) {
+  return array(
+    'stories' => array(
+      'variables' => array('items' => array(), 'title' => '', 'name' => '')
+    ),
+
+    'comments_list' => array(
+      'variables' => array('items' => array(), 'title' => '', 'story_data' => array())
+    ),
+
+    'homepage' => array(
+      'variables' => array('top' => array(), 'new' => array(), 'best' => array())
+    ),
+
+    'author' => array(
+      'variables' => array('items' => array())
+    ),
+  );
+}
+
+/**
+ * Implementing Curl Request.
+ * This function will return data if url is provided
+ */
+function get_hack_data($url){
+  $curl = curl_init();
+  curl_setopt_array($curl, array(
+  CURLOPT_URL => $url,
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_CUSTOMREQUEST => "GET",
+  ));
+  $response = curl_exec($curl);
+  $err = curl_error($curl);
+  curl_close($curl);
+  if ($err) {
+    return "cURL Error #:" . $err;
+  } else {
+    return json_decode($response);
+  }
+} 
+
+/**
+ * This Function fetches top stories ID's from hackers news.
+ */
+function get_top_stories(){
+  $host = Settings::get('hack_url', '1111'); 
+  return get_hack_data($host.'/v0/topstories.json?print=pretty');
+}
+
+/**
+ * This Function fetches new stories ID's from hackers news.
+ */
+function get_new_stories(){
+  $host = Settings::get('hack_url', '1111'); 
+  return get_hack_data($host.'/v0/newstories.json?print=pretty');
+}
+
+/**
+ * This Function fetches best stories ID's from hackers news.
+ */
+function get_best_stories(){
+  $host = Settings::get('hack_url', '1111'); 
+  return get_hack_data($host.'/v0/beststories.json?print=pretty');
+}
+
+/**
+ * This Function creates a table for All Stories (Top, New and Best) in drupal database
+ */
+function sync_hacker_stories(){
+ 
+  $host = Settings::get('hack_url', '1111'); 
+  $hacker_table = 'hacker_stories';
+  $schema = [
+    'fields' => [
+      'author' => ['type' => 'varchar', 'length' => 60],
+      'story_id' => ['type' => 'int'],
+      'score' => ['type' => 'int'],
+      'title' => ['type' => 'varchar', 'length' => 255],
+      'type' => ['type' => 'varchar', 'length' => 60],
+      'url' => ['type' => 'varchar', 'length' => 255],
+      'time' => ['type' => 'int','length' => 60],
+    ],
+  ];
+  if(db_table_exists($hacker_table) <= 0){
+    db_create_table($hacker_table, $schema);
+  }
+  $stories = array(
+    '0' => array( 'data' => get_top_stories(), 'count' => 200, 'type' => 'top_stories'),
+    '1' => array( 'data' => get_new_stories(), 'count' => 150, 'type' => 'new_stories'),
+    '2' => array( 'data' => get_best_stories(), 'count' => 150, 'type' => 'best_stories'),
+  );
+  $temp = 0;
+  while($temp < count($stories)){
+    $for_count = $stories[$temp]['count'];
+    $for_data = $stories[$temp]['data'];
+    for($i=0;$i<$for_count;$i++){
+      $url = $host.'v0/item/'.$for_data[$i].'.json?print=pretty';
+      $result  = get_hack_data($url);
+      $hacker_table = 'hacker_stories';
+      $insert = db_insert($hacker_table)
+      ->fields([
+        'author' => $result->by,
+        'story_id' => $result->id,
+        'score' => $result->score,
+        'title' => $result->title,
+        'type' => $stories[$temp]['type'],
+        'url' => $result->url,
+        'time' => $result->time,
+      ])
+      ->execute();
+    }
+    $temp++;
+  }
+}
+
+
+
+/**
+ * This Function returns all stories
+ */
+function get_hacker_stories($type){
+
+  $result = db_select('hacker_stories', 'h')
+  ->fields('h')
+  ->condition('h.type',$type,'=')
+  ->execute()
+  ->fetchAll();
+
+  //$result = (array) $result;
+
+ /* for($i=0;$i<count($result);$i++){
+    $result[$i]->count = get_comment_count($result[$i]->story_id);
+  }*/
+  return $result;
+}
+
+/**
+ * This Function creates a table for All comments in drupal database
+ */
+
+function get_comments($id, $story_id ){
+  $comments_table = 'top_stories_comments';
+  //echo $comments_table; die();
+  $schema = [
+    'fields' => [
+      'author' => ['type' => 'varchar', 'length' => 60],
+      'story_id' => ['type' => 'int'],
+      'comment_id' => ['type' => 'int'],
+      'parent' => ['type' => 'int'],
+      'text' => ['type' => 'varchar', 'length' => 10000],
+      'comment_time' => ['type' => 'int','length' => 60],
+    ],
+  ];
+  if(db_table_exists($comments_table) <= 0){
+      db_create_table($comments_table, $schema);
+  }
+  $url = 'https://hacker-news.firebaseio.com/v0/item/'.$id.'.json?print=pretty';
+   $res = get_hack_data($url);
+   $kids = $res->kids;
+   for($i=0;$i<count($kids);$i++){
+    $url_kids = 'https://hacker-news.firebaseio.com/v0/item/'.$kids[$i].'.json?print=pretty';
+    $res_kids = get_hack_data($url_kids);
+
+    $insert = db_insert($comments_table)
+    ->fields([
+      'author' => $res_kids->by,
+      'story_id' => $story_id,
+      'comment_id' => $res_kids->id,
+      'parent' => $res_kids->parent,
+      'text' => $res_kids->text,
+      'comment_time' => $res_kids->time,
+    ])
+    ->execute();
+    get_comments($res_kids->id,$story_id);
+
+  }
+  return $res_kids;
+}
+
+/**
+ * This Function returns the count of all comments of one story
+ */
+function get_comment_count($id){
+
+  $comment_count = db_select('top_stories_comments', 't')
+  ->fields('t')
+  ->condition('t.story_id',$id,'=')
+  ->condition('t.text','NULL','!=')
+  ->execute()
+  ->fetchAll();
+  
+return count($comment_count); 
+}
+
+/**
+ * This Function returns all comments
+ */
+function get_nested_comments($id){
+
+  $comment_top = db_select('top_stories_comments', 't')
+    ->fields('t')
+    ->condition('t.story_id',$id,'=')
+    ->condition('t.text','NULL','!=')
+    ->execute()
+    ->fetchAll();
+
+    for($i=0;$i<count($comment_top);$i++){
+      if($comment_top[$i]->parent == $comment_top[$i]->story_id){
+        $level1[] = $comment_top[$i];
+      }
+    }
+    return $level1;
+   // echo '<pre>'; print_r($level1); die();
+
+}
+
+/**
+ * This Function returns story details
+ */
+
+function get_story_details($id){
+
+  $story_data = db_select('hacker_stories', 't')
+  ->fields('t')
+  ->condition('t.story_id',$id,'=')
+  ->range(0, 1)
+  ->execute()
+  ->fetchAll();
+
+  for($i=0;$i<count($story_data);$i++){
+    $story_data[$i]->count = get_comment_count($story_data[$i]->story_id);
+  }
+return $story_data; 
+}
+
+/**
+ * This Function returns details of author
+ */
+function get_author_details($name){
+
+  $host = Settings::get('hack_url', '1111'); 
+
+  $url = $host.'/v0/user/'.$name.'.json?print=pretty';
+  return get_hack_data($url);
+}
+
+/**
+ * This Function returns all stories under one author
+ */
+function get_author_stories($name){
+  $query = db_select('hacker_stories', 'v');
+  $query->addExpression('MAX(score)', 'score');
+  $query->addExpression('MAX(time)', 'time');
+  $query->addExpression('MAX(title)', 'title');
+  $query->addExpression('MAX(author)', 'author');
+  $query->addExpression('MAX(url)', 'url');
+  $query->fields('v', array('story_id'));
+  $query->condition('author',$name,'=');
+  $query->groupBy('story_id');
+  $result = $query->execute()->fetchAll();
+  return $result;
+
+}
+
+/**
+ * This Function returns all comments under one author
+ */
+function get_author_comments($name){
+  $author_story = db_select('hacker_stories', 't')
+  ->fields('t')
+  ->condition('t.author',$name,'=')
+  ->execute()
+  ->fetchAll();
+
+  return 24;
+
+}
+

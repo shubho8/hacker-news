@@ -1,0 +1,36 @@
+custom.stories:
+  path: '/stories/{type}'
+  defaults:
+    _controller: '\Drupal\custom\Controller\NewsController::stories'
+  requirements:
+    _permission: 'access content'
+
+custom.author:
+  path: '/author/{name}'
+  defaults:
+    _controller: '\Drupal\custom\Controller\NewsController::author'
+  requirements:
+    _permission: 'access content'
+
+custom.comments_list:
+  path: '/comments/{id}'
+  defaults:
+    _controller: '\Drupal\custom\Controller\NewsController::comments'
+  requirements:
+    _permission: 'access content'
+
+custom.homepage:
+  path: '/homepage'
+  defaults:
+    _controller: '\Drupal\custom\Controller\NewsController::homepage'
+  requirements:
+    _permission: 'access content'
+
+custom.author_stories:
+  path: '/author/stories/{name}'
+  defaults:
+    _controller: '\Drupal\custom\Controller\NewsController::authorStories'
+  requirements:
+    _permission: 'access content'
+
+
