@@ -5,6 +5,7 @@ description: 'A flexible, recolorable theme with many regions and a responsive, 
 # core: 8.x
 libraries:
   - businessplus_lite/global-styling
+  - businessplus_lite/global-scripts
   - businessplus_lite/messages
   - businessplus_lite/tooltip
   - businessplus_lite/count-to-init

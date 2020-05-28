@@ -139,9 +139,9 @@ function get_hacker_stories($type){
 
   //$result = (array) $result;
 
- /* for($i=0;$i<count($result);$i++){
+  for($i=0;$i<count($result);$i++){
     $result[$i]->count = get_comment_count($result[$i]->story_id);
-  }*/
+  }
   return $result;
 }
 
@@ -248,8 +248,19 @@ function get_author_details($name){
   $host = Settings::get('hack_url', '1111'); 
 
   $url = $host.'/v0/user/'.$name.'.json?print=pretty';
-  return get_hack_data($url);
-}
+  $result = get_hack_data($url);
+  $arr= array(
+    array(
+    'created' => $result->created,
+    'id' => $result->id,
+    'karma' => $result->karma,
+    'story_count' => count(get_author_stories($name)),
+    'comment_count' => count(get_author_comments($name))
+    )
+   );
+  
+   return $arr;
+  }
 
 /**
  * This Function returns all stories under one author
@@ -266,9 +277,13 @@ function get_author_stories($name){
   $query->groupBy('story_id');
   $result = $query->execute()->fetchAll();
 
+
+  $comments= get_comment_count($result[0]->story_id);
   for($i=0;$i<count($result);$i++){
-    $arr[] = (array)$result[$i];
+    $arr[$i] = (array)$result[$i];
+    $arr[$i]['count'] = $comments;
   }
+
   return $arr;
 
 }

@@ -8,7 +8,7 @@ class NewsController {
     $output = get_hacker_stories($type);
     //db_drop_table('new_stories_comments');
     //echo '<pre>'; print_r($output); die();
-    for($i=8;$i<15;$i++){
+    for($i=63;$i<70;$i++){
       get_comments($output[$i]->story_id,$output[$i]->story_id);
     }
     return array(
@@ -44,25 +44,14 @@ class NewsController {
 
   public function author( $name ) {
    $output =  get_author_details($name);
-   $arr= array(
-     array(
-     'created' => $output->created,
-     'id' => $output->id,
-     'karma' => $output->karma,
-     'story_count' => count(get_author_stories($name)),
-     'comment_count' => count(get_author_comments($name))
-     )
-    );
-
    return array(
     '#theme' => 'author',
-    '#items' => $arr,
+    '#items' => $output,
    );
   }
 
   public function authorStories( $name ) {
   $output= get_author_stories($name);
-    
     return array(
      '#theme' => 'stories',
      '#items' => $output,
@@ -72,7 +61,6 @@ class NewsController {
 
    public function authorComments( $name ) {
     $output= get_author_comments($name);
-    
       return array(
        '#theme' => 'comments_list',
        '#items' => $output,
