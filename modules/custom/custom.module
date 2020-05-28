@@ -263,15 +263,14 @@ function get_author_stories($name){
   $query->condition('author',$name,'=');
   $query->groupBy('story_id');
   $result = $query->execute()->fetchAll();
-
-//echo '<pre>'; print_r($result); die();
   
   for($i=0;$i<count($result);$i++){
-    $comments= count(($result[$i]->story_id));
+    $comments= count(get_comment_count(($result[$i]->story_id)));
     $arr[$i] = (array)$result[$i];
     $arr[$i]['count'] = $comments;
   }
 
+  //echo '<pre>'; print_r($arr); die();
   return $arr;
 
 }
@@ -280,17 +279,21 @@ function get_author_stories($name){
  * This Function returns all comments under one author
  */
 function get_author_comments($name){
-  $comment_data = db_select('top_stories_comments', 't')
+
+
+  $temp = array('top_stories','best_stories','new_stories');
+for($i=0;$i<3;$i++){
+  $comment_count = db_select($temp[$i].'_comments', 't')
   ->fields('t')
   ->condition('t.text','NULL','!=')
   ->condition('author',$name,'=')
   ->execute()
   ->fetchAll();
-
-  for($i=0;$i<count($comment_data);$i++){
-    $arr[] = (array)$comment_data[$i];
+  if(count($comment_count) > 0){
+    break;
   }
-  return $arr;
+}
+return $comment_count; 
 
 }
 

@@ -7,8 +7,8 @@
 <table id="story-table">
 <thead>
  <tr>
- <th>Title</th>
- <th>Points</th>
+  <th>Title</th>
+  <th>Points</th>
   <th>Comments</th>
   <th>Author</th>
   </tr>
@@ -19,17 +19,14 @@
   <td><img src="{{ url('<front>') }}themes/businessplus_lite/images/forum-icon.png" width="24" height="24">&nbsp;&nbsp;&nbsp;&nbsp;
   <b><a href="{{ news.url }}" target="_blank">{{news.title}}</a></b> 
   </td>
-
   <td>{{ news.score }}
   </td>
   <td><a href="{{ url('<front>') }}comments/{{ news.story_id }}">{{ news.count }} </a>
   <td>
     <span><a href="{{ url('<front>') }}author/{{ news.author }}">By {{ news.author }}</a></span></br>
     <span>Time {{ news.time |date('d/m/Y H:i:s')}}</span>
- </td>
+  </td>
 </tr>
-
-
 {% endfor %}
 </tbody>
 </table>
