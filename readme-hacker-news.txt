@@ -1,10 +1,11 @@
 
-
+---------------------
 CONTENTS OF THIS FILE
 ---------------------
 
  * About Hacker News
  * Installation process
+ * Assessment tasks completed
 
 --------------------
  ABOUT Hacker News
@@ -36,3 +37,15 @@ Make chages accordingly to the settings.php file.
 
 visit - <host>/hacker
 
+---------------------------
+Assessment tasks completed
+---------------------------
+
+- Testing, e.g. Unit, End-to-end, etc - End to end testing document submitted
+- Submission via a VCS repo with all commit history - Attached github screenshot also can be viewed at https://github.com/shubho8/hacker-news/commits/master
+- Setup of continuous integration using github actions, travis ci, circle ci, gitlab ci or bitbucketpipelines - github actions has been used, php.yml file is attached
+- A working dockerfile or vagrantfile to set up the development environment - Setting up the environment process can be found in the installation section of this file
+- Security & load testing considerations or documentation - Security & load testing considerations document is attached
+- Style your site to look like the hacker news site. - Website is themed
+- Any technical design documentation and specs. - technical design document is attached
+- Database design (if applicable). - can be found in technical design document is attached
