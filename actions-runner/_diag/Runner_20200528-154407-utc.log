@@ -1,0 +1,272 @@
+[2020-05-28 15:44:07Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:44:07Z INFO HostContext] Well known config file 'Credentials': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials'
+[2020-05-28 15:44:07Z INFO Listener] Runner is built for OSX (X64) - osx-x64.
+[2020-05-28 15:44:07Z INFO Listener] RuntimeInformation: Darwin 18.7.0 Darwin Kernel Version 18.7.0: Mon Feb 10 21:08:45 PST 2020; root:xnu-4903.278.28~1/RELEASE_X86_64.
+[2020-05-28 15:44:07Z INFO Listener] Version: 2.262.1
+[2020-05-28 15:44:07Z INFO Listener] Commit: 8c938489a635b40553111a60c67cbe22e92c5228
+[2020-05-28 15:44:07Z INFO Listener] Culture: 
+[2020-05-28 15:44:07Z INFO Listener] UI Culture: 
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:44:07Z INFO Listener] Validating directory permissions for: '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:44:07Z INFO CommandLineParser] Parse
+[2020-05-28 15:44:07Z INFO CommandLineParser] Parsing 1 args
+[2020-05-28 15:44:07Z INFO CommandLineParser] parsing argument
+[2020-05-28 15:44:07Z INFO CommandLineParser] HasArgs: False
+[2020-05-28 15:44:07Z INFO CommandLineParser] Adding Command: run
+[2020-05-28 15:44:07Z INFO Listener] Arguments parsed
+[2020-05-28 15:44:07Z INFO Runner] ExecuteCommand
+[2020-05-28 15:44:07Z INFO ConfigurationStore] currentAssemblyLocation: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin/Runner.Listener.dll
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:44:07Z INFO ConfigurationStore] binPath: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:44:07Z INFO ConfigurationStore] RootFolder: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:44:07Z INFO HostContext] Well known config file 'Runner': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.runner'
+[2020-05-28 15:44:07Z INFO ConfigurationStore] ConfigFilePath: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.runner
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:44:07Z INFO HostContext] Well known config file 'Credentials': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials'
+[2020-05-28 15:44:07Z INFO ConfigurationStore] CredFilePath: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:44:07Z INFO HostContext] Well known config file 'MigratedCredentials': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_migrated'
+[2020-05-28 15:44:07Z INFO ConfigurationStore] MigratedCredFilePath: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_migrated
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:44:07Z INFO HostContext] Well known config file 'Service': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.service'
+[2020-05-28 15:44:07Z INFO ConfigurationStore] ServiceConfigFilePath: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.service
+[2020-05-28 15:44:07Z INFO CommandSettings] Flag 'help': 'False'
+[2020-05-28 15:44:07Z INFO CommandSettings] Flag 'version': 'False'
+[2020-05-28 15:44:07Z INFO CommandSettings] Flag 'commit': 'False'
+[2020-05-28 15:44:07Z INFO CommandSettings] Command 'configure': 'False'
+[2020-05-28 15:44:07Z INFO CommandSettings] Command 'remove': 'False'
+[2020-05-28 15:44:07Z INFO CommandSettings] Command 'warmup': 'False'
+[2020-05-28 15:44:07Z INFO ConfigurationManager] LoadSettings
+[2020-05-28 15:44:07Z INFO ConfigurationStore] IsConfigured()
+[2020-05-28 15:44:07Z INFO ConfigurationStore] IsConfigured: True
+[2020-05-28 15:44:07Z INFO ConfigurationManager] Is configured: True
+[2020-05-28 15:44:07Z INFO ConfigurationStore] Read setting file: 289 chars
+[2020-05-28 15:44:07Z INFO ConfigurationManager] Settings Loaded
+[2020-05-28 15:44:07Z INFO ConfigurationStore] IsServiceConfigured()
+[2020-05-28 15:44:07Z INFO ConfigurationStore] IsServiceConfigured: False
+[2020-05-28 15:44:07Z INFO CommandSettings] Command 'run': 'True'
+[2020-05-28 15:44:07Z INFO ConfigurationStore] IsConfigured()
+[2020-05-28 15:44:07Z INFO ConfigurationStore] IsConfigured: True
+[2020-05-28 15:44:07Z INFO ConfigurationManager] Is configured: True
+[2020-05-28 15:44:07Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2020-05-28 15:44:07Z INFO Runner] Set runner startup type - Manual
+[2020-05-28 15:44:07Z INFO CommandSettings] Flag 'once': 'False'
+[2020-05-28 15:44:07Z INFO Runner] RunAsync
+[2020-05-28 15:44:07Z INFO ConfigurationManager] LoadSettings
+[2020-05-28 15:44:07Z INFO ConfigurationStore] IsConfigured()
+[2020-05-28 15:44:07Z INFO ConfigurationStore] IsConfigured: True
+[2020-05-28 15:44:07Z INFO ConfigurationManager] Is configured: True
+[2020-05-28 15:44:07Z INFO ConfigurationManager] Settings Loaded
+[2020-05-28 15:44:07Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "Shubho-hacker",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelines.actions.githubusercontent.com/serviceHosts/c4c5ae09-f3dd-4638-bea2-10e62e3dde8b/",
+  "GitHubUrl": "https://github.com/shubho8/hacker-news",
+  "WorkFolder": "_work"
+}
+[2020-05-28 15:44:07Z INFO MessageListener] Loading Credentials
+[2020-05-28 15:44:07Z INFO ConfigurationStore] HasCredentials()
+[2020-05-28 15:44:07Z INFO ConfigurationStore] stored True
+[2020-05-28 15:44:07Z INFO CredentialManager] GetCredentialProvider
+[2020-05-28 15:44:07Z INFO CredentialManager] Creating type OAuth
+[2020-05-28 15:44:07Z INFO CredentialManager] Creating credential type: OAuth
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:44:07Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:44:07Z INFO HostContext] Well known config file 'RSACredentials': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams'
+[2020-05-28 15:44:07Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams
+[2020-05-28 15:44:07Z INFO MessageListener] Attempt to create session.
+[2020-05-28 15:44:07Z INFO MessageListener] Connecting to the Runner Server...
+[2020-05-28 15:44:07Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2020-05-28 15:44:07Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-05-28 15:44:07Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2020-05-28 15:44:07Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-05-28 15:44:07Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2020-05-28 15:44:07Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-05-28 15:44:07Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-05-28 15:44:07Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-05-28 15:44:08Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-05-28 15:44:08Z INFO MessageListener] VssConnection created
+[2020-05-28 15:44:08Z INFO Terminal] WRITE LINE: 
+[2020-05-28 15:44:08Z INFO Terminal] WRITE LINE: 
+[2020-05-28 15:44:08Z WARN GitHubActionsService] Authentication failed with status code 401.
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: c9253519-1788-4bb1-8e9d-23e7c6367f9e
+ActivityId: 4e92cc0d-db6e-4507-95ee-5425c786eb98
+X-TFS-Session: 3e76b36b-5f58-414b-ad0d-0cc33bc4c1ce
+X-VSS-E2EID: e36762b4-abde-471c-8b20-e46e1e1175c6
+X-VSS-SenderDeploymentId: 13a19993-c6bc-326c-afb4-32c5519f46f0
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-MSEdge-Ref: Ref A: 9B4F299EE29C4A33AFA0D83DEB01BA43 Ref B: JNB02EDGE0220 Ref C: 2020-05-28T15:44:08Z
+Date: Thu, 28 May 2020 15:44:08 GMT
+
+[2020-05-28 15:44:08Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams
+[2020-05-28 15:44:09Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams
+[2020-05-28 15:44:10Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2020-05-28 15:44:10Z INFO MessageListener] Session created.
+[2020-05-28 15:44:10Z INFO MessageListener] Start checking oauth authorization url update.
+[2020-05-28 15:44:10Z INFO Terminal] WRITE LINE: 2020-05-28 15:44:10Z: Listening for Jobs
+[2020-05-28 15:44:10Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2020-05-28 15:55:31Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams
+[2020-05-28 15:55:31Z INFO MessageListener] Message '1' received from session '844439e2-f420-4998-9e40-d897ac031fe7'.
+[2020-05-28 15:55:31Z INFO JobDispatcher] Job request 1 for plan e49294c3-df32-4975-918d-012d4dd9fe31 job 360907d9-2987-5618-2677-6fad96b44d89 received.
+[2020-05-28 15:55:31Z INFO JobDispatcher] Pull OrchestrationId e49294c3-df32-4975-918d-012d4dd9fe31.run._7_0 from JWT claims
+[2020-05-28 15:55:31Z INFO Terminal] WRITE LINE: 2020-05-28 15:55:31Z: Running job: PHP 7.0
+[2020-05-28 15:55:31Z INFO JobDispatcher] Start renew job request 1 for job 360907d9-2987-5618-2677-6fad96b44d89.
+[2020-05-28 15:55:33Z INFO JobDispatcher] Successfully renew job request 1, job is valid till 05/28/2020 16:05:33
+[2020-05-28 15:55:33Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:33Z INFO ProcessInvokerWrapper] Starting process:
+[2020-05-28 15:55:33Z INFO ProcessInvokerWrapper]   File name: '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin/Runner.Worker'
+[2020-05-28 15:55:33Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 97 100'
+[2020-05-28 15:55:33Z INFO ProcessInvokerWrapper]   Working directory: '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:33Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-05-28 15:55:33Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-05-28 15:55:33Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2020-05-28 15:55:33Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-05-28 15:55:33Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-05-28 15:55:33Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-05-28 15:55:33Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2020-05-28 15:55:33Z INFO ProcessInvokerWrapper] Process started with process id 31059, waiting for process exit.
+[2020-05-28 15:55:33Z INFO JobDispatcher] Send job request message to worker for job 360907d9-2987-5618-2677-6fad96b44d89.
+[2020-05-28 15:55:33Z INFO JobNotification] Entering JobStarted Notification
+[2020-05-28 15:55:33Z INFO JobNotification] Entering StartMonitor
+[2020-05-28 15:55:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-05-28 15:55:44Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-05-28 15:55:44Z INFO ProcessInvokerWrapper] Finished process 31059 with exit code 102, and elapsed time 00:00:11.4418750.
+[2020-05-28 15:55:44Z INFO JobDispatcher] Worker finished for job 360907d9-2987-5618-2677-6fad96b44d89. Code: 102
+[2020-05-28 15:55:44Z INFO JobDispatcher] finish job request for job 360907d9-2987-5618-2677-6fad96b44d89 with result: Failed
+[2020-05-28 15:55:44Z INFO Terminal] WRITE LINE: 2020-05-28 15:55:44Z: Job PHP 7.0 completed with result: Failed
+[2020-05-28 15:55:44Z INFO JobDispatcher] Stop renew job request for job 360907d9-2987-5618-2677-6fad96b44d89.
+[2020-05-28 15:55:44Z INFO JobDispatcher] job renew has been canceled, stop renew job request 1.
+[2020-05-28 15:55:44Z INFO JobNotification] Entering JobCompleted Notification
+[2020-05-28 15:55:44Z INFO JobNotification] Entering EndMonitor
+[2020-05-28 15:55:47Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams
+[2020-05-28 15:55:47Z INFO MessageListener] Message '2' received from session '844439e2-f420-4998-9e40-d897ac031fe7'.
+[2020-05-28 15:55:47Z INFO JobDispatcher] Job request 2 for plan e49294c3-df32-4975-918d-012d4dd9fe31 job 48d56abc-9b89-56b7-aa93-28fdf3b196e2 received.
+[2020-05-28 15:55:47Z INFO JobDispatcher] Pull OrchestrationId e49294c3-df32-4975-918d-012d4dd9fe31.run._5_6 from JWT claims
+[2020-05-28 15:55:47Z INFO JobDispatcher] Job request 360907d9-2987-5618-2677-6fad96b44d89 processed succeed.
+[2020-05-28 15:55:47Z INFO Terminal] WRITE LINE: 2020-05-28 15:55:47Z: Running job: PHP 5.6
+[2020-05-28 15:55:47Z INFO JobDispatcher] Start renew job request 2 for job 48d56abc-9b89-56b7-aa93-28fdf3b196e2.
+[2020-05-28 15:55:47Z INFO JobDispatcher] Successfully renew job request 2, job is valid till 05/28/2020 16:05:47
+[2020-05-28 15:55:47Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:47Z INFO ProcessInvokerWrapper] Starting process:
+[2020-05-28 15:55:47Z INFO ProcessInvokerWrapper]   File name: '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin/Runner.Worker'
+[2020-05-28 15:55:47Z INFO ProcessInvokerWrapper]   Arguments: 'spawnclient 97 100'
+[2020-05-28 15:55:47Z INFO ProcessInvokerWrapper]   Working directory: '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:47Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-05-28 15:55:47Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-05-28 15:55:47Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'True'
+[2020-05-28 15:55:47Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-05-28 15:55:47Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-05-28 15:55:47Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-05-28 15:55:47Z INFO ProcessInvokerWrapper]   High priority process: 'True'
+[2020-05-28 15:55:47Z INFO ProcessInvokerWrapper] Process started with process id 31073, waiting for process exit.
+[2020-05-28 15:55:47Z INFO JobDispatcher] Send job request message to worker for job 48d56abc-9b89-56b7-aa93-28fdf3b196e2.
+[2020-05-28 15:55:47Z INFO JobNotification] Entering JobStarted Notification
+[2020-05-28 15:55:47Z INFO JobNotification] Entering StartMonitor
+[2020-05-28 15:55:50Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams
+[2020-05-28 15:55:51Z INFO MessageListener] Message '3' received from session '844439e2-f420-4998-9e40-d897ac031fe7'.
+[2020-05-28 15:55:51Z INFO JobDispatcher] Job cancellation request 48d56abc-9b89-56b7-aa93-28fdf3b196e2 received, cancellation timeout 5 minutes.
+[2020-05-28 15:55:51Z INFO JobDispatcher] Send job cancellation message to worker for job 48d56abc-9b89-56b7-aa93-28fdf3b196e2.
+[2020-05-28 15:56:02Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-05-28 15:56:02Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-05-28 15:56:02Z INFO ProcessInvokerWrapper] Finished process 31073 with exit code 103, and elapsed time 00:00:14.4070379.
+[2020-05-28 15:56:02Z INFO JobDispatcher] finish job request for job 48d56abc-9b89-56b7-aa93-28fdf3b196e2 with result: Canceled
+[2020-05-28 15:56:02Z INFO Terminal] WRITE LINE: 2020-05-28 15:56:02Z: Job PHP 5.6 completed with result: Canceled
+[2020-05-28 15:56:02Z INFO JobDispatcher] Stop renew job request for job 48d56abc-9b89-56b7-aa93-28fdf3b196e2.
+[2020-05-28 15:56:02Z INFO JobDispatcher] job renew has been canceled, stop renew job request 2.
+[2020-05-28 15:56:02Z INFO JobNotification] Entering JobCompleted Notification
+[2020-05-28 15:56:02Z INFO JobNotification] Entering EndMonitor
+[2020-05-28 16:26:09Z INFO MessageListener] No message retrieved from session '844439e2-f420-4998-9e40-d897ac031fe7' within last 30 minutes.
+[2020-05-28 16:39:37Z WARN GitHubActionsService] Authentication failed with status code 401.
+Transfer-Encoding: chunked
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: c9253519-1788-4bb1-8e9d-23e7c6367f9e
+ActivityId: 4e8b2342-db6e-4507-95ee-5425c786eb98
+X-TFS-Session: 3e76b36b-5f58-414b-ad0d-0cc33bc4c1ce
+X-VSS-E2EID: a8aee8c7-687b-4e39-b7ce-959907c43236
+X-VSS-SenderDeploymentId: 13a19993-c6bc-326c-afb4-32c5519f46f0
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-MSEdge-Ref: Ref A: 468EE99F9731493EA0E6A7439358EAE4 Ref B: JNB02EDGE0208 Ref C: 2020-05-28T16:39:37Z
+Date: Thu, 28 May 2020 16:39:36 GMT
+
+[2020-05-28 16:39:37Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams
+[2020-05-28 16:39:38Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2020-05-28 16:56:27Z INFO MessageListener] No message retrieved from session '844439e2-f420-4998-9e40-d897ac031fe7' within last 30 minutes.
+[2020-05-28 17:26:45Z INFO MessageListener] No message retrieved from session '844439e2-f420-4998-9e40-d897ac031fe7' within last 30 minutes.
+[2020-05-28 17:34:53Z WARN GitHubActionsService] Authentication failed with status code 401.
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 9f928ec7-6539-4691-8a60-6ef898fb92d2
+ActivityId: 2d456a11-7a37-411e-b5cb-f0cf94205621
+X-TFS-Session: 3e76b36b-5f58-414b-ad0d-0cc33bc4c1ce
+X-VSS-E2EID: 3caa3cff-8c4b-4db7-8dba-be26eb9e9efc
+X-VSS-SenderDeploymentId: 13a19993-c6bc-326c-afb4-32c5519f46f0
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-MSEdge-Ref: Ref A: AC2B082218974873B95447C93E5145AE Ref B: JNB02EDGE0213 Ref C: 2020-05-28T17:34:52Z
+Date: Thu, 28 May 2020 17:34:52 GMT
+
+[2020-05-28 17:34:53Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams
+[2020-05-28 17:34:54Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2020-05-28 17:57:03Z INFO MessageListener] No message retrieved from session '844439e2-f420-4998-9e40-d897ac031fe7' within last 30 minutes.
+[2020-05-28 18:08:00Z WARN GitHubActionsService] Attempt 1 of GET request to https://pipelines.actions.githubusercontent.com/serviceHosts/c4c5ae09-f3dd-4638-bea2-10e62e3dde8b/_apis/distributedtask/pools/1/messages?sessionId=844439e2-f420-4998-9e40-d897ac031fe7&lastMessageId=3 failed (HTTP Status: ServiceUnavailable, AFD Ref: Ref A: FEA08144D20149B7BD5F30775D4E190D Ref B: JNB02EDGE0208 Ref C: 2020-05-28T18:08:00Z). The operation will be retried in 10.808 seconds.
+[2020-05-28 18:27:32Z INFO MessageListener] No message retrieved from session '844439e2-f420-4998-9e40-d897ac031fe7' within last 30 minutes.
+[2020-05-28 18:30:04Z WARN GitHubActionsService] Authentication failed with status code 401.
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 9f928ec7-6539-4691-8a60-6ef898fb92d2
+ActivityId: 2d3e2584-7a37-411e-b5cb-f0cf94205621
+X-TFS-Session: 3e76b36b-5f58-414b-ad0d-0cc33bc4c1ce
+X-VSS-E2EID: cab0123e-389d-4f52-a00c-e446dd7f5b53
+X-VSS-SenderDeploymentId: 13a19993-c6bc-326c-afb4-32c5519f46f0
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-MSEdge-Ref: Ref A: 77BD200CBEE341F6996CE7A620D07EAA Ref B: JNB02EDGE0208 Ref C: 2020-05-28T18:30:03Z
+Date: Thu, 28 May 2020 18:30:03 GMT
+
+[2020-05-28 18:30:04Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams
+[2020-05-28 18:30:05Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2020-05-28 18:57:51Z INFO MessageListener] No message retrieved from session '844439e2-f420-4998-9e40-d897ac031fe7' within last 30 minutes.
+[2020-05-28 19:25:39Z WARN GitHubActionsService] Authentication failed with status code 401.
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 9f928ec7-6539-4691-8a60-6ef898fb92d2
+ActivityId: 2d36e3d7-7a37-411e-b5cb-f0cf94205621
+X-TFS-Session: 3e76b36b-5f58-414b-ad0d-0cc33bc4c1ce
+X-VSS-E2EID: fdc9bae3-d66a-4770-bf30-309c97d3dbd6
+X-VSS-SenderDeploymentId: 13a19993-c6bc-326c-afb4-32c5519f46f0
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-MSEdge-Ref: Ref A: D90E3A6643214924B03E7742B8B42025 Ref B: JNB02EDGE0208 Ref C: 2020-05-28T19:25:38Z
+Date: Thu, 28 May 2020 19:25:39 GMT
+
+[2020-05-28 19:25:39Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams
+[2020-05-28 19:25:40Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2020-05-28 19:28:12Z INFO MessageListener] No message retrieved from session '844439e2-f420-4998-9e40-d897ac031fe7' within last 30 minutes.
+[2020-05-28 19:58:29Z INFO MessageListener] No message retrieved from session '844439e2-f420-4998-9e40-d897ac031fe7' within last 30 minutes.
+[2020-05-28 20:11:51Z INFO Terminal] WRITE LINE: Exiting...
+[2020-05-28 20:11:51Z INFO ConfigurationStore] IsServiceConfigured()
+[2020-05-28 20:11:51Z INFO ConfigurationStore] IsServiceConfigured: False
+[2020-05-28 20:11:51Z INFO HostContext] Runner will be shutdown for UserCancelled
+[2020-05-28 20:11:51Z WARN GitHubActionsService] GET request to https://pipelines.actions.githubusercontent.com/serviceHosts/c4c5ae09-f3dd-4638-bea2-10e62e3dde8b/_apis/distributedtask/pools/1/messages?sessionId=844439e2-f420-4998-9e40-d897ac031fe7&lastMessageId=3 has been cancelled.
+[2020-05-28 20:11:51Z INFO MessageListener] Get next message has been cancelled.
+[2020-05-28 20:11:51Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2020-05-28 20:11:51Z INFO JobDispatcher] Ensure WorkerDispather for job 48d56abc-9b89-56b7-aa93-28fdf3b196e2 run to finish, cancel any running job.
+[2020-05-28 20:11:51Z INFO JobDispatcher] Job request 48d56abc-9b89-56b7-aa93-28fdf3b196e2 processed succeed.
+[2020-05-28 20:11:52Z INFO Listener] Runner execution been cancelled.

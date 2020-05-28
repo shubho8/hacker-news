@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "Shubho-hacker",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/serviceHosts/c4c5ae09-f3dd-4638-bea2-10e62e3dde8b/",
+  "gitHubUrl": "https://github.com/shubho8/hacker-news",
+  "workFolder": "_work"
+}

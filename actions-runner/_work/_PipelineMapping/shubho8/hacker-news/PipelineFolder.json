@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "shubho8/hacker-news",
+  "pipelineDirectory": "hacker-news",
+  "workspaceDirectory": "hacker-news/hacker-news",
+  "repositories": {
+    "shubho8/hacker-news": {
+      "repositoryPath": "hacker-news/hacker-news",
+      "lastRunOn": "05/28/2020 17:55:35 +02:00"
+    }
+  },
+  "lastRunOn": "05/28/2020 17:55:49 +02:00"
+}

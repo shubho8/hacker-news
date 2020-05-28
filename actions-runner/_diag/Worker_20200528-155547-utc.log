@@ -1,0 +1,1197 @@
+[2020-05-28 15:55:47Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2020-05-28 15:55:47Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:47Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:47Z INFO HostContext] Well known config file 'Credentials': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials'
+[2020-05-28 15:55:48Z INFO Worker] Version: 2.262.1
+[2020-05-28 15:55:48Z INFO Worker] Commit: 8c938489a635b40553111a60c67cbe22e92c5228
+[2020-05-28 15:55:48Z INFO Worker] Culture: 
+[2020-05-28 15:55:48Z INFO Worker] UI Culture: 
+[2020-05-28 15:55:48Z INFO Worker] Waiting to receive the job message from the channel.
+[2020-05-28 15:55:48Z INFO Worker] Message received.
+[2020-05-28 15:55:48Z INFO Worker] Job message:
+ {
+  "fileTable": [
+    ".github/workflows/php.yml"
+  ],
+  "mask": [
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    },
+    {
+      "type": "regex",
+      "value": "***"
+    }
+  ],
+  "steps": [
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "actions/checkout",
+        "ref": "v2",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 17,
+        "col": 13,
+        "lit": "Checkout"
+      },
+      "condition": "success()",
+      "id": "c2d6ec73-a5c4-510e-a8f5-8d34a6f6f23b",
+      "name": "actionscheckout"
+    },
+    {
+      "type": "action",
+      "reference": {
+        "type": "repository",
+        "name": "shubho8/hacker-news",
+        "ref": "v2",
+        "repositoryType": "GitHub",
+        "path": ""
+      },
+      "displayNameToken": {
+        "type": 0,
+        "file": 1,
+        "line": 20,
+        "col": 13,
+        "lit": "Setup PHP"
+      },
+      "environment": {
+        "type": 2,
+        "file": 1,
+        "line": 25,
+        "col": 9,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 25,
+              "col": 9,
+              "lit": "runner"
+            },
+            "value": {
+              "type": 0,
+              "file": 1,
+              "line": 25,
+              "col": 17,
+              "lit": "self-hosted"
+            }
+          }
+        ]
+      },
+      "inputs": {
+        "type": 2,
+        "file": 1,
+        "line": 23,
+        "col": 9,
+        "map": [
+          {
+            "key": {
+              "type": 0,
+              "file": 1,
+              "line": 23,
+              "col": 9,
+              "lit": "php-version"
+            },
+            "value": {
+              "type": 3,
+              "file": 1,
+              "line": 23,
+              "col": 22,
+              "expr": "matrix.php-versions"
+            }
+          }
+        ]
+      },
+      "condition": "success()",
+      "id": "1fc4885b-b3ee-5b22-413a-88e4356b6ea3",
+      "name": "shubho8hacker-news"
+    }
+  ],
+  "variables": {
+    "system.isScheduled": {
+      "value": "False"
+    },
+    "system.github.token": {
+      "value": "***",
+      "isSecret": true
+    },
+    "system": {
+      "value": "actions"
+    },
+    "system.hosttype": {
+      "value": "actions"
+    },
+    "system.servertype": {
+      "value": "Hosted"
+    },
+    "system.culture": {
+      "value": "en-US"
+    },
+    "system.collectionId": {
+      "value": "c4c5ae09-f3dd-4638-bea2-10e62e3dde8b"
+    },
+    "system.collectionUri": {
+      "value": "https://pipelines.actions.githubusercontent.com/QANYrGdwmGBFVBeOjj7msKUrEeflceDq8trj23fpou4iqCfHH3/"
+    },
+    "system.taskDefinitionsUri": {
+      "value": "https://pipelines.actions.githubusercontent.com/QANYrGdwmGBFVBeOjj7msKUrEeflceDq8trj23fpou4iqCfHH3/"
+    },
+    "system.pipelineStartTime": {
+      "value": "2020-05-28 15:55:44+00:00"
+    },
+    "system.definitionId": {
+      "value": "3"
+    },
+    "system.teamProjectId": {
+      "value": "00000000-0000-0000-0000-000000000000"
+    },
+    "build.buildId": {
+      "value": "2"
+    },
+    "build.containerId": {
+      "value": "624557"
+    },
+    "system.definitionName": {
+      "value": "hacker-news"
+    },
+    "system.planId": {
+      "value": "e49294c3-df32-4975-918d-012d4dd9fe31"
+    },
+    "system.timelineId": {
+      "value": "e49294c3-df32-4975-918d-012d4dd9fe31"
+    },
+    "system.stageDisplayName": {
+      "value": "__default"
+    },
+    "system.stageId": {
+      "value": "96ac2280-8cb4-5df5-99de-dd2da759617d"
+    },
+    "system.stageName": {
+      "value": "__default"
+    },
+    "system.stageAttempt": {
+      "value": "1"
+    },
+    "system.phaseDisplayName": {
+      "value": "run"
+    },
+    "system.phaseId": {
+      "value": "7e5a62c6-a3ae-5561-387a-bc0babb014af"
+    },
+    "system.phaseName": {
+      "value": "run"
+    },
+    "system.phaseAttempt": {
+      "value": "1"
+    },
+    "system.jobIdentifier": {
+      "value": "run._5_6"
+    },
+    "system.jobAttempt": {
+      "value": "1"
+    },
+    "System.JobPositionInPhase": {
+      "value": "1"
+    },
+    "System.TotalJobsInPhase": {
+      "value": "7"
+    },
+    "system.github.job": {
+      "value": "run"
+    },
+    "system.jobDisplayName": {
+      "value": "PHP 5.6"
+    },
+    "system.jobId": {
+      "value": "48d56abc-9b89-56b7-aa93-28fdf3b196e2"
+    },
+    "system.jobName": {
+      "value": "_5_6"
+    },
+    "github_token": {
+      "value": "***",
+      "isSecret": true
+    }
+  },
+  "jobSidecarContainers": {},
+  "messageType": "PipelineAgentJobRequest",
+  "plan": {
+    "scopeIdentifier": "00000000-0000-0000-0000-000000000000",
+    "planType": "Actions",
+    "version": 12,
+    "planId": "e49294c3-df32-4975-918d-012d4dd9fe31",
+    "planGroup": "Actions:00000000-0000-0000-0000-000000000000:1",
+    "artifactUri": "vstfs:///Build/Build/2",
+    "artifactLocation": null,
+    "definition": {
+      "_links": {},
+      "id": 3,
+      "name": "hacker-news"
+    },
+    "owner": {
+      "_links": {},
+      "id": 3,
+      "name": "shubho8"
+    }
+  },
+  "timeline": {
+    "id": "e49294c3-df32-4975-918d-012d4dd9fe31",
+    "changeId": 20,
+    "location": null
+  },
+  "jobId": "48d56abc-9b89-56b7-aa93-28fdf3b196e2",
+  "jobDisplayName": "PHP 5.6",
+  "jobName": "_5_6",
+  "requestId": 2,
+  "lockedUntil": "0001-01-01T00:00:00",
+  "resources": {
+    "endpoints": [
+      {
+        "data": {
+          "ServerId": "c4c5ae09-f3dd-4638-bea2-10e62e3dde8b",
+          "ServerName": "QANYrGdwmGBFVBeOjj7msKUrEeflceDq8trj23fpou4iqCfHH3",
+          "CacheServerUrl": "https://artifactcache.actions.githubusercontent.com/QANYrGdwmGBFVBeOjj7msKUrEeflceDq8trj23fpou4iqCfHH3/"
+        },
+        "name": "SystemVssConnection",
+        "url": "https://pipelines.actions.githubusercontent.com/QANYrGdwmGBFVBeOjj7msKUrEeflceDq8trj23fpou4iqCfHH3/",
+        "authorization": {
+          "parameters": {
+            "AccessToken": ***
+          },
+          "scheme": "OAuth"
+        },
+        "isShared": false,
+        "isReady": true
+      }
+    ]
+  },
+  "contextData": {
+    "github": {
+      "t": 2,
+      "d": [
+        {
+          "k": "ref",
+          "v": "refs/heads/master"
+        },
+        {
+          "k": "sha",
+          "v": "5b9b48d9a092556b27d07ed0dbd578b4f27fce8e"
+        },
+        {
+          "k": "repository",
+          "v": "shubho8/hacker-news"
+        },
+        {
+          "k": "repository_owner",
+          "v": "shubho8"
+        },
+        {
+          "k": "repositoryUrl",
+          "v": "git://github.com/shubho8/hacker-news.git"
+        },
+        {
+          "k": "run_id",
+          "v": "118100545"
+        },
+        {
+          "k": "run_number",
+          "v": "2"
+        },
+        {
+          "k": "actor",
+          "v": "shubho8"
+        },
+        {
+          "k": "workflow",
+          "v": "Drupal 8 hacker"
+        },
+        {
+          "k": "head_ref",
+          "v": ""
+        },
+        {
+          "k": "base_ref",
+          "v": ""
+        },
+        {
+          "k": "event_name",
+          "v": "push"
+        },
+        {
+          "k": "event",
+          "v": {
+            "t": 2,
+            "d": [
+              {
+                "k": "after",
+                "v": "5b9b48d9a092556b27d07ed0dbd578b4f27fce8e"
+              },
+              {
+                "k": "base_ref",
+                "v": null
+              },
+              {
+                "k": "before",
+                "v": "6356be790866252e536ad7af8abd5137525acd07"
+              },
+              {
+                "k": "commits",
+                "v": {
+                  "t": 1,
+                  "a": [
+                    {
+                      "t": 2,
+                      "d": [
+                        {
+                          "k": "author",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "66022613+shubho8@users.noreply.github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "shubho8"
+                              },
+                              {
+                                "k": "username",
+                                "v": "shubho8"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "committer",
+                          "v": {
+                            "t": 2,
+                            "d": [
+                              {
+                                "k": "email",
+                                "v": "noreply@github.com"
+                              },
+                              {
+                                "k": "name",
+                                "v": "GitHub"
+                              },
+                              {
+                                "k": "username",
+                                "v": "web-flow"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "k": "distinct",
+                          "v": true
+                        },
+                        {
+                          "k": "id",
+                          "v": "5b9b48d9a092556b27d07ed0dbd578b4f27fce8e"
+                        },
+                        {
+                          "k": "message",
+                          "v": "php.yml"
+                        },
+                        {
+                          "k": "timestamp",
+                          "v": "2020-05-28T17:55:22+02:00"
+                        },
+                        {
+                          "k": "tree_id",
+                          "v": "4baea6d08eb4d75296f141b3648fa29ae3409ff4"
+                        },
+                        {
+                          "k": "url",
+                          "v": "https://github.com/shubho8/hacker-news/commit/5b9b48d9a092556b27d07ed0dbd578b4f27fce8e"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "compare",
+                "v": "https://github.com/shubho8/hacker-news/compare/6356be790866...5b9b48d9a092"
+              },
+              {
+                "k": "created",
+                "v": false
+              },
+              {
+                "k": "deleted",
+                "v": false
+              },
+              {
+                "k": "forced",
+                "v": false
+              },
+              {
+                "k": "head_commit",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "author",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "66022613+shubho8@users.noreply.github.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "shubho8"
+                          },
+                          {
+                            "k": "username",
+                            "v": "shubho8"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "committer",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "email",
+                            "v": "noreply@github.com"
+                          },
+                          {
+                            "k": "name",
+                            "v": "GitHub"
+                          },
+                          {
+                            "k": "username",
+                            "v": "web-flow"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "distinct",
+                      "v": true
+                    },
+                    {
+                      "k": "id",
+                      "v": "5b9b48d9a092556b27d07ed0dbd578b4f27fce8e"
+                    },
+                    {
+                      "k": "message",
+                      "v": "php.yml"
+                    },
+                    {
+                      "k": "timestamp",
+                      "v": "2020-05-28T17:55:22+02:00"
+                    },
+                    {
+                      "k": "tree_id",
+                      "v": "4baea6d08eb4d75296f141b3648fa29ae3409ff4"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/shubho8/hacker-news/commit/5b9b48d9a092556b27d07ed0dbd578b4f27fce8e"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "pusher",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "email",
+                      "v": "66022613+shubho8@users.noreply.github.com"
+                    },
+                    {
+                      "k": "name",
+                      "v": "shubho8"
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "ref",
+                "v": "refs/heads/master"
+              },
+              {
+                "k": "repository",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "archive_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/{archive_format}{/ref}"
+                    },
+                    {
+                      "k": "archived",
+                      "v": false
+                    },
+                    {
+                      "k": "assignees_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/assignees{/user}"
+                    },
+                    {
+                      "k": "blobs_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/git/blobs{/sha}"
+                    },
+                    {
+                      "k": "branches_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/branches{/branch}"
+                    },
+                    {
+                      "k": "clone_url",
+                      "v": "https://github.com/shubho8/hacker-news.git"
+                    },
+                    {
+                      "k": "collaborators_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/collaborators{/collaborator}"
+                    },
+                    {
+                      "k": "comments_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/comments{/number}"
+                    },
+                    {
+                      "k": "commits_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/commits{/sha}"
+                    },
+                    {
+                      "k": "compare_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/compare/{base}...{head}"
+                    },
+                    {
+                      "k": "contents_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/contents/{+path}"
+                    },
+                    {
+                      "k": "contributors_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/contributors"
+                    },
+                    {
+                      "k": "created_at",
+                      "v": 1590591304.0
+                    },
+                    {
+                      "k": "default_branch",
+                      "v": "master"
+                    },
+                    {
+                      "k": "deployments_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/deployments"
+                    },
+                    {
+                      "k": "description",
+                      "v": "hacker news using drupal 8"
+                    },
+                    {
+                      "k": "disabled",
+                      "v": false
+                    },
+                    {
+                      "k": "downloads_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/downloads"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/events"
+                    },
+                    {
+                      "k": "fork",
+                      "v": false
+                    },
+                    {
+                      "k": "forks",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "forks_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/forks"
+                    },
+                    {
+                      "k": "full_name",
+                      "v": "shubho8/hacker-news"
+                    },
+                    {
+                      "k": "git_commits_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/git/commits{/sha}"
+                    },
+                    {
+                      "k": "git_refs_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/git/refs{/sha}"
+                    },
+                    {
+                      "k": "git_tags_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/git/tags{/sha}"
+                    },
+                    {
+                      "k": "git_url",
+                      "v": "git://github.com/shubho8/hacker-news.git"
+                    },
+                    {
+                      "k": "has_downloads",
+                      "v": true
+                    },
+                    {
+                      "k": "has_issues",
+                      "v": false
+                    },
+                    {
+                      "k": "has_pages",
+                      "v": false
+                    },
+                    {
+                      "k": "has_projects",
+                      "v": false
+                    },
+                    {
+                      "k": "has_wiki",
+                      "v": false
+                    },
+                    {
+                      "k": "homepage",
+                      "v": null
+                    },
+                    {
+                      "k": "hooks_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/hooks"
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/shubho8/hacker-news"
+                    },
+                    {
+                      "k": "id",
+                      "v": 267348340.0
+                    },
+                    {
+                      "k": "issue_comment_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/issues/comments{/number}"
+                    },
+                    {
+                      "k": "issue_events_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/issues/events{/number}"
+                    },
+                    {
+                      "k": "issues_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/issues{/number}"
+                    },
+                    {
+                      "k": "keys_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/keys{/key_id}"
+                    },
+                    {
+                      "k": "labels_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/labels{/name}"
+                    },
+                    {
+                      "k": "language",
+                      "v": "PHP"
+                    },
+                    {
+                      "k": "languages_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/languages"
+                    },
+                    {
+                      "k": "license",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "key",
+                            "v": "gpl-2.0"
+                          },
+                          {
+                            "k": "name",
+                            "v": "GNU General Public License v2.0"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDc6TGljZW5zZTg="
+                          },
+                          {
+                            "k": "spdx_id",
+                            "v": "GPL-2.0"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/licenses/gpl-2.0"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "master_branch",
+                      "v": "master"
+                    },
+                    {
+                      "k": "merges_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/merges"
+                    },
+                    {
+                      "k": "milestones_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/milestones{/number}"
+                    },
+                    {
+                      "k": "mirror_url",
+                      "v": null
+                    },
+                    {
+                      "k": "name",
+                      "v": "hacker-news"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDEwOlJlcG9zaXRvcnkyNjczNDgzNDA="
+                    },
+                    {
+                      "k": "notifications_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/notifications{?since,all,participating}"
+                    },
+                    {
+                      "k": "open_issues",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "open_issues_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "owner",
+                      "v": {
+                        "t": 2,
+                        "d": [
+                          {
+                            "k": "avatar_url",
+                            "v": "https://avatars3.githubusercontent.com/u/66022613?v=4"
+                          },
+                          {
+                            "k": "email",
+                            "v": "66022613+shubho8@users.noreply.github.com"
+                          },
+                          {
+                            "k": "events_url",
+                            "v": "https://api.github.com/users/shubho8/events{/privacy}"
+                          },
+                          {
+                            "k": "followers_url",
+                            "v": "https://api.github.com/users/shubho8/followers"
+                          },
+                          {
+                            "k": "following_url",
+                            "v": "https://api.github.com/users/shubho8/following{/other_user}"
+                          },
+                          {
+                            "k": "gists_url",
+                            "v": "https://api.github.com/users/shubho8/gists{/gist_id}"
+                          },
+                          {
+                            "k": "gravatar_id",
+                            "v": ""
+                          },
+                          {
+                            "k": "html_url",
+                            "v": "https://github.com/shubho8"
+                          },
+                          {
+                            "k": "id",
+                            "v": 66022613.0
+                          },
+                          {
+                            "k": "login",
+                            "v": "shubho8"
+                          },
+                          {
+                            "k": "name",
+                            "v": "shubho8"
+                          },
+                          {
+                            "k": "node_id",
+                            "v": "MDQ6VXNlcjY2MDIyNjEz"
+                          },
+                          {
+                            "k": "organizations_url",
+                            "v": "https://api.github.com/users/shubho8/orgs"
+                          },
+                          {
+                            "k": "received_events_url",
+                            "v": "https://api.github.com/users/shubho8/received_events"
+                          },
+                          {
+                            "k": "repos_url",
+                            "v": "https://api.github.com/users/shubho8/repos"
+                          },
+                          {
+                            "k": "site_admin",
+                            "v": false
+                          },
+                          {
+                            "k": "starred_url",
+                            "v": "https://api.github.com/users/shubho8/starred{/owner}{/repo}"
+                          },
+                          {
+                            "k": "subscriptions_url",
+                            "v": "https://api.github.com/users/shubho8/subscriptions"
+                          },
+                          {
+                            "k": "type",
+                            "v": "User"
+                          },
+                          {
+                            "k": "url",
+                            "v": "https://api.github.com/users/shubho8"
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "k": "private",
+                      "v": true
+                    },
+                    {
+                      "k": "pulls_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/pulls{/number}"
+                    },
+                    {
+                      "k": "pushed_at",
+                      "v": 1590681323.0
+                    },
+                    {
+                      "k": "releases_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/releases{/id}"
+                    },
+                    {
+                      "k": "size",
+                      "v": 36538.0
+                    },
+                    {
+                      "k": "ssh_url",
+                      "v": "git@github.com:shubho8/hacker-news.git"
+                    },
+                    {
+                      "k": "stargazers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_count",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "stargazers_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/stargazers"
+                    },
+                    {
+                      "k": "statuses_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/statuses/{sha}"
+                    },
+                    {
+                      "k": "subscribers_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/subscribers"
+                    },
+                    {
+                      "k": "subscription_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/subscription"
+                    },
+                    {
+                      "k": "svn_url",
+                      "v": "https://github.com/shubho8/hacker-news"
+                    },
+                    {
+                      "k": "tags_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/tags"
+                    },
+                    {
+                      "k": "teams_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/teams"
+                    },
+                    {
+                      "k": "trees_url",
+                      "v": "https://api.github.com/repos/shubho8/hacker-news/git/trees{/sha}"
+                    },
+                    {
+                      "k": "updated_at",
+                      "v": "2020-05-28T15:21:58Z"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://github.com/shubho8/hacker-news"
+                    },
+                    {
+                      "k": "watchers",
+                      "v": 0.0
+                    },
+                    {
+                      "k": "watchers_count",
+                      "v": 0.0
+                    }
+                  ]
+                }
+              },
+              {
+                "k": "sender",
+                "v": {
+                  "t": 2,
+                  "d": [
+                    {
+                      "k": "avatar_url",
+                      "v": "https://avatars3.githubusercontent.com/u/66022613?v=4"
+                    },
+                    {
+                      "k": "events_url",
+                      "v": "https://api.github.com/users/shubho8/events{/privacy}"
+                    },
+                    {
+                      "k": "followers_url",
+                      "v": "https://api.github.com/users/shubho8/followers"
+                    },
+                    {
+                      "k": "following_url",
+                      "v": "https://api.github.com/users/shubho8/following{/other_user}"
+                    },
+                    {
+                      "k": "gists_url",
+                      "v": "https://api.github.com/users/shubho8/gists{/gist_id}"
+                    },
+                    {
+                      "k": "gravatar_id",
+                      "v": ""
+                    },
+                    {
+                      "k": "html_url",
+                      "v": "https://github.com/shubho8"
+                    },
+                    {
+                      "k": "id",
+                      "v": 66022613.0
+                    },
+                    {
+                      "k": "login",
+                      "v": "shubho8"
+                    },
+                    {
+                      "k": "node_id",
+                      "v": "MDQ6VXNlcjY2MDIyNjEz"
+                    },
+                    {
+                      "k": "organizations_url",
+                      "v": "https://api.github.com/users/shubho8/orgs"
+                    },
+                    {
+                      "k": "received_events_url",
+                      "v": "https://api.github.com/users/shubho8/received_events"
+                    },
+                    {
+                      "k": "repos_url",
+                      "v": "https://api.github.com/users/shubho8/repos"
+                    },
+                    {
+                      "k": "site_admin",
+                      "v": false
+                    },
+                    {
+                      "k": "starred_url",
+                      "v": "https://api.github.com/users/shubho8/starred{/owner}{/repo}"
+                    },
+                    {
+                      "k": "subscriptions_url",
+                      "v": "https://api.github.com/users/shubho8/subscriptions"
+                    },
+                    {
+                      "k": "type",
+                      "v": "User"
+                    },
+                    {
+                      "k": "url",
+                      "v": "https://api.github.com/users/shubho8"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "k": "url",
+          "v": "https://github.com"
+        },
+        {
+          "k": "api_url",
+          "v": "https://api.github.com"
+        },
+        {
+          "k": "graphql_url",
+          "v": "https://api.github.com/graphql"
+        }
+      ]
+    },
+    "needs": {
+      "t": 2
+    },
+    "matrix": {
+      "t": 2,
+      "d": [
+        {
+          "k": "php-versions",
+          "v": "5.6"
+        }
+      ]
+    },
+    "strategy": {
+      "t": 2,
+      "d": [
+        {
+          "k": "fail-fast",
+          "v": true
+        },
+        {
+          "k": "job-index",
+          "v": 0.0
+        },
+        {
+          "k": "job-total",
+          "v": 7.0
+        },
+        {
+          "k": "max-parallel",
+          "v": 7.0
+        }
+      ]
+    }
+  }
+}
+[2020-05-28 15:55:48Z INFO JobRunner] Job ID 48d56abc-9b89-56b7-aa93-28fdf3b196e2
+[2020-05-28 15:55:48Z INFO JobRunner] Creating job server with URL: https://pipelines.actions.githubusercontent.com/QANYrGdwmGBFVBeOjj7msKUrEeflceDq8trj23fpou4iqCfHH3/
+[2020-05-28 15:55:48Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-05-28 15:55:48Z INFO Worker] Listening for cancel message from the channel.
+[2020-05-28 15:55:48Z INFO Worker] Waiting for the job to complete or for a cancel message from the channel.
+[2020-05-28 15:55:49Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-05-28 15:55:49Z INFO JobServerQueue] Start process web console line queue.
+[2020-05-28 15:55:49Z INFO JobServerQueue] Start process file upload queue.
+[2020-05-28 15:55:49Z INFO JobServerQueue] Start process timeline update queue.
+[2020-05-28 15:55:49Z INFO ExecutionContext] Initialize GitHub context
+[2020-05-28 15:55:49Z INFO ExecutionContext] Initialize Env context
+[2020-05-28 15:55:49Z INFO ConfigurationStore] currentAssemblyLocation: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin/Runner.Worker.dll
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:49Z INFO ConfigurationStore] binPath: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:49Z INFO ConfigurationStore] RootFolder: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:49Z INFO HostContext] Well known config file 'Runner': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.runner'
+[2020-05-28 15:55:49Z INFO ConfigurationStore] ConfigFilePath: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.runner
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:49Z INFO HostContext] Well known config file 'Credentials': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials'
+[2020-05-28 15:55:49Z INFO ConfigurationStore] CredFilePath: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:49Z INFO HostContext] Well known config file 'MigratedCredentials': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_migrated'
+[2020-05-28 15:55:49Z INFO ConfigurationStore] MigratedCredFilePath: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_migrated
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:49Z INFO HostContext] Well known config file 'Service': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.service'
+[2020-05-28 15:55:49Z INFO ConfigurationStore] ServiceConfigFilePath: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.service
+[2020-05-28 15:55:49Z INFO ConfigurationStore] Read setting file: 289 chars
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Diag': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_diag'
+[2020-05-28 15:55:49Z INFO JobRunner] Starting the job execution context.
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Work': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work'
+[2020-05-28 15:55:49Z INFO JobRunner] Validating directory permissions for: '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Work': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Tools': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work/_tool'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Work': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Temp': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work/_temp'
+[2020-05-28 15:55:49Z INFO JobRunner] Getting job extension.
+[2020-05-28 15:55:49Z INFO JobRunner] Initialize job. Getting all job steps.
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Diag': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_diag'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:49Z INFO HostContext] Well known config file 'SetupInfo': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.setup_info'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:49Z INFO HostContext] Well known directory 'Work': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work'
+[2020-05-28 15:55:49Z INFO PipelineDirectoryManager] Loading tracking config if exists: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work/_PipelineMapping/shubho8/hacker-news/PipelineFolder.json
+[2020-05-28 15:55:49Z INFO PipelineDirectoryManager] Updating job run properties.
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Work': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Work': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Work': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work'
+[2020-05-28 15:55:50Z INFO JobExtension] Downloading actions
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Work': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Actions': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work/_actions'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Work': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Actions': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work/_actions'
+[2020-05-28 15:55:50Z INFO ActionManager] Download archive 'https://api.github.com/repos/actions/checkout/tarball/v2' to '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work/_actions/actions/checkout/v2'.
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Work': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work'
+[2020-05-28 15:55:50Z INFO HostContext] Well known directory 'Actions': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work/_actions'
+[2020-05-28 15:55:50Z INFO ActionManager] Save archive 'https://api.github.com/repos/actions/checkout/tarball/v2' into /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work/_actions/_temp_7c534c29-64de-4575-a3db-92ba4cd90d53/ee62615d-1a5a-4410-8cd8-8d4587ee3d4e.tar.gz.
+[2020-05-28 15:55:50Z INFO JobServerQueue] Try to append 1 batches web console lines for record '613534bd-0cf6-47b6-976f-d1eeaa815f96', success rate: 1/1.
+[2020-05-28 15:55:51Z INFO Worker] Cancellation/Shutdown message received.
+[2020-05-28 15:55:59Z INFO ActionManager] Action download has been cancelled.
+[2020-05-28 15:55:59Z ERR  JobExtension] Caught cancellation exception from JobExtension Initialization: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at GitHub.Runner.Worker.ActionManager.DownloadRepositoryActionAsync(IExecutionContext executionContext, ActionDownloadDetails actionDownloadDetails, String destDirectory)
+   at GitHub.Runner.Worker.ActionManager.DownloadRepositoryActionAsync(IExecutionContext executionContext, ActionStep repositoryAction)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsAsync(IExecutionContext executionContext, IEnumerable`1 steps)
+   at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
+[2020-05-28 15:55:59Z ERR  JobRunner] Job is canceled during initialize.
+[2020-05-28 15:55:59Z ERR  JobRunner] Caught exception: System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at GitHub.Runner.Worker.ActionManager.DownloadRepositoryActionAsync(IExecutionContext executionContext, ActionDownloadDetails actionDownloadDetails, String destDirectory)
+   at GitHub.Runner.Worker.ActionManager.DownloadRepositoryActionAsync(IExecutionContext executionContext, ActionStep repositoryAction)
+   at GitHub.Runner.Worker.ActionManager.PrepareActionsAsync(IExecutionContext executionContext, IEnumerable`1 steps)
+   at GitHub.Runner.Worker.JobExtension.InitializeJob(IExecutionContext jobContext, AgentJobRequestMessage message)
+   at GitHub.Runner.Worker.JobRunner.RunAsync(AgentJobRequestMessage message, CancellationToken jobRequestCancellationToken)
+[2020-05-28 15:55:59Z INFO JobRunner] Shutting down the job server queue.
+[2020-05-28 15:55:59Z INFO JobServerQueue] Fire signal to shutdown all queues.
+[2020-05-28 15:55:59Z INFO JobServerQueue] All queue process task stopped.
+[2020-05-28 15:56:00Z INFO JobServerQueue] Try to append 1 batches web console lines for record '613534bd-0cf6-47b6-976f-d1eeaa815f96', success rate: 1/1.
+[2020-05-28 15:56:00Z INFO JobServerQueue] Web console line queue drained.
+[2020-05-28 15:56:00Z INFO JobServerQueue] Uploading 2 files in one shot.
+[2020-05-28 15:56:01Z INFO JobServerQueue] Try to upload 2 log files or attachments, success rate: 2/2.
+[2020-05-28 15:56:01Z INFO JobServerQueue] File upload queue drained.
+[2020-05-28 15:56:01Z INFO JobServerQueue] Timeline update queue drained.
+[2020-05-28 15:56:01Z INFO JobServerQueue] All queue process tasks have been stopped, and all queues are drained.
+[2020-05-28 15:56:01Z INFO TempDirectoryManager] Cleaning runner temp folder: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/_work/_temp
+[2020-05-28 15:56:01Z INFO JobRunner] Raising job completed event.

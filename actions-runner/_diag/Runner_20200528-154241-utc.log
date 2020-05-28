@@ -1,0 +1,212 @@
+[2020-05-28 15:42:41Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2020-05-28 15:42:41Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:42:41Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:42:41Z INFO HostContext] Well known config file 'Credentials': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials'
+[2020-05-28 15:42:41Z INFO Listener] Runner is built for OSX (X64) - osx-x64.
+[2020-05-28 15:42:41Z INFO Listener] RuntimeInformation: Darwin 18.7.0 Darwin Kernel Version 18.7.0: Mon Feb 10 21:08:45 PST 2020; root:xnu-4903.278.28~1/RELEASE_X86_64.
+[2020-05-28 15:42:41Z INFO Listener] Version: 2.262.1
+[2020-05-28 15:42:41Z INFO Listener] Commit: 8c938489a635b40553111a60c67cbe22e92c5228
+[2020-05-28 15:42:41Z INFO Listener] Culture: 
+[2020-05-28 15:42:41Z INFO Listener] UI Culture: 
+[2020-05-28 15:42:41Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:42:41Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:42:41Z INFO Listener] Validating directory permissions for: '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:42:41Z INFO CommandLineParser] Parse
+[2020-05-28 15:42:41Z INFO CommandLineParser] Parsing 5 args
+[2020-05-28 15:42:41Z INFO CommandLineParser] parsing argument
+[2020-05-28 15:42:41Z INFO CommandLineParser] HasArgs: False
+[2020-05-28 15:42:41Z INFO CommandLineParser] Adding Command: configure
+[2020-05-28 15:42:41Z INFO CommandLineParser] parsing argument
+[2020-05-28 15:42:41Z INFO CommandLineParser] HasArgs: True
+[2020-05-28 15:42:41Z INFO CommandLineParser] arg: url
+[2020-05-28 15:42:41Z INFO CommandLineParser] parsing argument
+[2020-05-28 15:42:41Z INFO CommandLineParser] HasArgs: True
+[2020-05-28 15:42:41Z INFO CommandLineParser] Adding option 'url': 'https://github.com/shubho8/hacker-news'
+[2020-05-28 15:42:41Z INFO CommandLineParser] parsing argument
+[2020-05-28 15:42:41Z INFO CommandLineParser] HasArgs: True
+[2020-05-28 15:42:41Z INFO CommandLineParser] arg: token
+[2020-05-28 15:42:41Z INFO CommandLineParser] parsing argument
+[2020-05-28 15:42:41Z INFO CommandLineParser] HasArgs: True
+[2020-05-28 15:42:41Z INFO CommandLineParser] Adding option 'token': '***'
+[2020-05-28 15:42:41Z INFO Listener] Arguments parsed
+[2020-05-28 15:42:41Z INFO Runner] ExecuteCommand
+[2020-05-28 15:42:41Z INFO ConfigurationStore] currentAssemblyLocation: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin/Runner.Listener.dll
+[2020-05-28 15:42:41Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:42:41Z INFO ConfigurationStore] binPath: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin
+[2020-05-28 15:42:41Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:42:41Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:42:41Z INFO ConfigurationStore] RootFolder: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner
+[2020-05-28 15:42:41Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:42:41Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:42:41Z INFO HostContext] Well known config file 'Runner': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.runner'
+[2020-05-28 15:42:41Z INFO ConfigurationStore] ConfigFilePath: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.runner
+[2020-05-28 15:42:41Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:42:41Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:42:41Z INFO HostContext] Well known config file 'Credentials': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials'
+[2020-05-28 15:42:41Z INFO ConfigurationStore] CredFilePath: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials
+[2020-05-28 15:42:41Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:42:41Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:42:41Z INFO HostContext] Well known config file 'MigratedCredentials': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_migrated'
+[2020-05-28 15:42:41Z INFO ConfigurationStore] MigratedCredFilePath: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_migrated
+[2020-05-28 15:42:41Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:42:41Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:42:41Z INFO HostContext] Well known config file 'Service': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.service'
+[2020-05-28 15:42:41Z INFO ConfigurationStore] ServiceConfigFilePath: /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.service
+[2020-05-28 15:42:41Z INFO CommandSettings] Flag 'help': 'False'
+[2020-05-28 15:42:41Z INFO CommandSettings] Flag 'version': 'False'
+[2020-05-28 15:42:41Z INFO CommandSettings] Flag 'commit': 'False'
+[2020-05-28 15:42:41Z INFO CommandSettings] Command 'configure': 'True'
+[2020-05-28 15:42:41Z INFO Terminal] WRITE LINE: 
+[2020-05-28 15:42:41Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2020-05-28 15:42:41Z INFO Terminal] WRITE LINE: |        ____ _ _   _   _       _          _        _   _                      |
+[2020-05-28 15:42:41Z INFO Terminal] WRITE LINE: |       / ___(_) |_| | | |_   _| |__      / \   ___| |_(_) ___  _ __  ___      |
+[2020-05-28 15:42:41Z INFO Terminal] WRITE LINE: |      | |  _| | __| |_| | | | | '_ \    / _ \ / __| __| |/ _ \| '_ \/ __|     |
+[2020-05-28 15:42:41Z INFO Terminal] WRITE LINE: |      | |_| | | |_|  _  | |_| | |_) |  / ___ \ (__| |_| | (_) | | | \__ \     |
+[2020-05-28 15:42:41Z INFO Terminal] WRITE LINE: |       \____|_|\__|_| |_|\__,_|_.__/  /_/   \_\___|\__|_|\___/|_| |_|___/     |
+[2020-05-28 15:42:41Z INFO Terminal] WRITE LINE: |                                                                              |
+[2020-05-28 15:42:41Z INFO Terminal] WRITE: |                       
+[2020-05-28 15:42:41Z INFO Terminal] WRITE: Self-hosted runner registration
+[2020-05-28 15:42:41Z INFO Terminal] WRITE LINE:                         |
+[2020-05-28 15:42:41Z INFO Terminal] WRITE LINE: |                                                                              |
+[2020-05-28 15:42:41Z INFO Terminal] WRITE LINE: --------------------------------------------------------------------------------
+[2020-05-28 15:42:41Z INFO ConfigurationManager] ConfigureAsync
+[2020-05-28 15:42:41Z INFO ConfigurationStore] IsConfigured()
+[2020-05-28 15:42:41Z INFO ConfigurationStore] IsConfigured: False
+[2020-05-28 15:42:41Z INFO ConfigurationManager] Is configured: False
+[2020-05-28 15:42:41Z INFO CommandSettings] Arg 'url': 'https://github.com/shubho8/hacker-news'
+[2020-05-28 15:42:41Z INFO CommandSettings] Remove url from Arg dictionary.
+[2020-05-28 15:42:41Z INFO CommandSettings] Arg 'token': '***'
+[2020-05-28 15:42:41Z INFO CommandSettings] Remove token from Arg dictionary.
+[2020-05-28 15:42:47Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration'
+[2020-05-28 15:42:47Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2020-05-28 15:42:47Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2020-05-28 15:42:47Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-05-28 15:42:47Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2020-05-28 15:42:47Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-05-28 15:42:47Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2020-05-28 15:42:47Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-05-28 15:42:49Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-05-28 15:42:49Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-05-28 15:42:49Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-05-28 15:42:49Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-05-28 15:42:51Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-05-28 15:42:51Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-05-28 15:42:51Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-05-28 15:42:51Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-05-28 15:42:52Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-05-28 15:42:52Z INFO Terminal] WRITE LINE: 
+[2020-05-28 15:42:52Z INFO ConfigurationManager] Test Connection complete.
+[2020-05-28 15:42:52Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:42:52Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:42:52Z INFO HostContext] Well known config file 'RSACredentials': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams'
+[2020-05-28 15:42:52Z INFO RSAFileKeyManager] Creating new RSA key using 2048-bit key length
+[2020-05-28 15:42:54Z INFO RSAFileKeyManager] Successfully saved RSA key parameters to file /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams
+[2020-05-28 15:42:54Z INFO RSAFileKeyManager] Which: 'chmod'
+[2020-05-28 15:42:54Z INFO RSAFileKeyManager] Location: '/bin/chmod'
+[2020-05-28 15:42:54Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:42:54Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:42:54Z INFO ProcessInvokerWrapper] Starting process:
+[2020-05-28 15:42:54Z INFO ProcessInvokerWrapper]   File name: '/bin/chmod'
+[2020-05-28 15:42:54Z INFO ProcessInvokerWrapper]   Arguments: '600 /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams'
+[2020-05-28 15:42:54Z INFO ProcessInvokerWrapper]   Working directory: '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:42:54Z INFO ProcessInvokerWrapper]   Require exit code zero: 'False'
+[2020-05-28 15:42:54Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-05-28 15:42:54Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2020-05-28 15:42:54Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-05-28 15:42:54Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-05-28 15:42:54Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-05-28 15:42:54Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2020-05-28 15:42:54Z INFO ProcessInvokerWrapper] Process started with process id 30294, waiting for process exit.
+[2020-05-28 15:42:54Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-05-28 15:42:54Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-05-28 15:42:54Z INFO ProcessInvokerWrapper] Finished process 30294 with exit code 0, and elapsed time 00:00:00.0175755.
+[2020-05-28 15:42:54Z INFO RSAFileKeyManager] Successfully set permissions for RSA key parameters file /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams
+[2020-05-28 15:42:54Z INFO ConfigurationManager] Found a private pool with id {1} and name {2} 1, Default
+[2020-05-28 15:42:54Z INFO CommandSettings] Arg 'name': ''
+[2020-05-28 15:42:54Z INFO CommandSettings] Flag 'unattended': 'False'
+[2020-05-28 15:42:54Z INFO PromptManager] ReadValue
+[2020-05-28 15:42:54Z INFO Terminal] WRITE: Enter the name of runner: 
+[2020-05-28 15:42:54Z INFO Terminal] WRITE: [press Enter for Shubhos-Air] 
+[2020-05-28 15:42:54Z INFO Terminal] READ LINE
+[2020-05-28 15:43:25Z INFO Terminal] Read value: 'Shubho-hacker'
+[2020-05-28 15:43:25Z INFO Terminal] WRITE LINE: 
+[2020-05-28 15:43:25Z INFO CommandSettings] Arg 'labels': ''
+[2020-05-28 15:43:25Z INFO CommandSettings] Flag 'unattended': 'False'
+[2020-05-28 15:43:25Z INFO PromptManager] ReadValue
+[2020-05-28 15:43:25Z INFO Terminal] WRITE: This runner will have the following labels: 'self-hosted', 'macOS', 'X64' 
+Enter any additional labels (ex. label-1,label-2): 
+[2020-05-28 15:43:25Z INFO Terminal] WRITE: [press Enter to skip] 
+[2020-05-28 15:43:25Z INFO Terminal] READ LINE
+[2020-05-28 15:43:35Z INFO Terminal] Read value: ''
+[2020-05-28 15:43:35Z INFO Terminal] WRITE LINE: 
+[2020-05-28 15:43:36Z INFO ConfigurationManager] Agent server url resolve by server: 'https://pipelines.actions.githubusercontent.com/serviceHosts/c4c5ae09-f3dd-4638-bea2-10e62e3dde8b/'.
+[2020-05-28 15:43:36Z INFO ConfigurationStore] Saving OAuth credential @ /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials
+[2020-05-28 15:43:36Z INFO ConfigurationStore] Credentials Saved.
+[2020-05-28 15:43:36Z INFO ConfigurationStore] HasCredentials()
+[2020-05-28 15:43:36Z INFO ConfigurationStore] stored True
+[2020-05-28 15:43:36Z INFO CredentialManager] GetCredentialProvider
+[2020-05-28 15:43:36Z INFO CredentialManager] Creating type OAuth
+[2020-05-28 15:43:36Z INFO CredentialManager] Creating credential type: OAuth
+[2020-05-28 15:43:36Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams
+[2020-05-28 15:43:36Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2020-05-28 15:43:36Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-05-28 15:43:36Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2020-05-28 15:43:36Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-05-28 15:43:36Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2020-05-28 15:43:36Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2020-05-28 15:43:37Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-05-28 15:43:37Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-05-28 15:43:37Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2020-05-28 15:43:38Z WARN GitHubActionsService] Authentication failed with status code 401.
+Transfer-Encoding: chunked
+WWW-Authenticate: Bearer
+Strict-Transport-Security: max-age=2592000
+X-TFS-ProcessId: 1cac72b7-cc81-492e-bbe4-e2750edc7c31
+ActivityId: 3ee9d5bf-927c-410b-9238-f6f43482c2c8
+X-TFS-Session: 9345dbcf-6eb5-44d3-85f6-51be115b5cfc
+X-VSS-E2EID: e69bef09-ba1e-45ee-be9b-5b7d87aa1f94
+X-VSS-SenderDeploymentId: 13a19993-c6bc-326c-afb4-32c5519f46f0
+X-TFS-ServiceError: The+user+%27System%3aPublicAccess%3baaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa%27+is+not+authorized+to+access+this+resource.
+X-VSS-S2STargetService: 0000005A-0000-8888-8000-000000000000/visualstudio.com
+X-MSEdge-Ref: Ref A: 6615C2A24B9C49DA89BAB56C682A6AFB Ref B: JNB02EDGE0208 Ref C: 2020-05-28T15:43:37Z
+Date: Thu, 28 May 2020 15:43:37 GMT
+
+[2020-05-28 15:43:38Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams
+[2020-05-28 15:43:38Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/.credentials_rsaparams
+[2020-05-28 15:43:39Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2020-05-28 15:43:39Z INFO CommandSettings] Arg 'work': ''
+[2020-05-28 15:43:39Z INFO CommandSettings] Flag 'unattended': 'False'
+[2020-05-28 15:43:39Z INFO PromptManager] ReadValue
+[2020-05-28 15:43:39Z INFO Terminal] WRITE: Enter name of work folder: 
+[2020-05-28 15:43:39Z INFO Terminal] WRITE: [press Enter for _work] 
+[2020-05-28 15:43:39Z INFO Terminal] READ LINE
+[2020-05-28 15:43:50Z INFO Terminal] Read value: ''
+[2020-05-28 15:43:50Z INFO PromptManager] Falling back to the default: '_work'
+[2020-05-28 15:43:50Z INFO ConfigurationStore] Saving runner settings.
+[2020-05-28 15:43:50Z INFO ConfigurationStore] Settings Saved.
+[2020-05-28 15:43:50Z INFO Terminal] WRITE LINE: 
+[2020-05-28 15:43:50Z INFO Terminal] WRITE LINE: 
+[2020-05-28 15:43:50Z INFO OsxServiceControlManager] Service name 'actions.runner.shubho8-hacker-news.Shubho-hacker' display name 'GitHub Actions Runner (shubho8-hacker-news.Shubho-hacker)' will be used for service configuration.
+[2020-05-28 15:43:50Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:43:50Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:43:50Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:43:50Z INFO HostContext] Well known directory 'Bin': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/bin'
+[2020-05-28 15:43:50Z INFO HostContext] Well known directory 'Root': '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:43:50Z INFO UnixUtil] Which: 'chmod'
+[2020-05-28 15:43:50Z INFO UnixUtil] Location: '/bin/chmod'
+[2020-05-28 15:43:50Z INFO UnixUtil] Running /bin/chmod 755 "/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/svc.sh"
+[2020-05-28 15:43:50Z INFO ProcessInvokerWrapper] Starting process:
+[2020-05-28 15:43:50Z INFO ProcessInvokerWrapper]   File name: '/bin/chmod'
+[2020-05-28 15:43:50Z INFO ProcessInvokerWrapper]   Arguments: '755 "/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner/svc.sh"'
+[2020-05-28 15:43:50Z INFO ProcessInvokerWrapper]   Working directory: '/Applications/XAMPP/xamppfiles/htdocs/hacker/actions-runner'
+[2020-05-28 15:43:50Z INFO ProcessInvokerWrapper]   Require exit code zero: 'True'
+[2020-05-28 15:43:50Z INFO ProcessInvokerWrapper]   Encoding web name:  ; code page: ''
+[2020-05-28 15:43:50Z INFO ProcessInvokerWrapper]   Force kill process on cancellation: 'False'
+[2020-05-28 15:43:50Z INFO ProcessInvokerWrapper]   Redirected STDIN: 'False'
+[2020-05-28 15:43:50Z INFO ProcessInvokerWrapper]   Persist current code page: 'False'
+[2020-05-28 15:43:50Z INFO ProcessInvokerWrapper]   Keep redirected STDIN open: 'False'
+[2020-05-28 15:43:50Z INFO ProcessInvokerWrapper]   High priority process: 'False'
+[2020-05-28 15:43:50Z INFO ProcessInvokerWrapper] Process started with process id 30367, waiting for process exit.
+[2020-05-28 15:43:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-05-28 15:43:50Z INFO ProcessInvokerWrapper] STDOUT/STDERR stream read finished.
+[2020-05-28 15:43:50Z INFO ProcessInvokerWrapper] Finished process 30367 with exit code 0, and elapsed time 00:00:00.0123141.

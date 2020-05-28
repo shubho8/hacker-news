@@ -6,11 +6,6 @@ class NewsController {
 
   public function stories( $type ) {
     $output = get_hacker_stories($type);
-    //db_drop_table('new_stories_comments');
-    //echo '<pre>'; print_r($output); die();
-    for($i=63;$i<70;$i++){
-      get_comments($output[$i]->story_id,$output[$i]->story_id);
-    }
     return array(
       '#theme' => 'stories',
       '#items' => $output,
@@ -20,7 +15,7 @@ class NewsController {
 
   public function comments( $id ) {
     $story_details = get_story_details($id);
-    $output =  get_nested_comments($id);
+    $output =  get_comment_count($id);
     return array(
       '#theme' => 'comments_list',
       '#items' => (array)$output,

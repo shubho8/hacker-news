@@ -137,10 +137,8 @@ function get_hacker_stories($type){
   ->execute()
   ->fetchAll();
 
-  //$result = (array) $result;
-
   for($i=0;$i<count($result);$i++){
-    $result[$i]->count = get_comment_count($result[$i]->story_id);
+    $result[$i]->count = count(get_comment_count($result[$i]->story_id));
   }
   return $result;
 }
@@ -150,7 +148,7 @@ function get_hacker_stories($type){
  */
 
 function get_comments($id, $story_id ){
-  $comments_table = 'best_stories_comments';
+  $comments_table = 'new_stories_comments';
   //echo $comments_table; die();
   $schema = [
     'fields' => [
@@ -167,6 +165,7 @@ function get_comments($id, $story_id ){
   }
   $url = 'https://hacker-news.firebaseio.com/v0/item/'.$id.'.json?print=pretty';
    $res = get_hack_data($url);
+   if($res->kids){
    $kids = $res->kids;
    for($i=0;$i<count($kids);$i++){
     $url_kids = 'https://hacker-news.firebaseio.com/v0/item/'.$kids[$i].'.json?print=pretty';
@@ -185,6 +184,7 @@ function get_comments($id, $story_id ){
     get_comments($res_kids->id,$story_id);
 
   }
+}
   return $res_kids;
 }
 
@@ -192,34 +192,22 @@ function get_comments($id, $story_id ){
  * This Function returns the count of all comments of one story
  */
 function get_comment_count($id){
-
-  $comment_count = db_select('top_stories_comments', 't')
+$temp = array('top_stories','best_stories','new_stories');
+for($i=0;$i<3;$i++){
+  $comment_count = db_select($temp[$i].'_comments', 't')
   ->fields('t')
   ->condition('t.story_id',$id,'=')
   ->condition('t.text','NULL','!=')
   ->execute()
   ->fetchAll();
-  
-return count($comment_count); 
+  if(count($comment_count) > 0){
+    break;
+  }
+}
+return $comment_count; 
 }
 
-/**
- * This Function returns all comments
- */
-function get_nested_comments($id){
 
-  $comment_top = db_select('top_stories_comments', 't')
-    ->fields('t')
-    ->condition('t.story_id',$id,'=')
-    ->condition('t.text','NULL','!=')
-    ->execute()
-    ->fetchAll();
-
-    
-    return $comment_top;
-   // echo '<pre>'; print_r($level1); die();
-
-}
 
 /**
  * This Function returns story details
@@ -233,9 +221,8 @@ function get_story_details($id){
   ->range(0, 1)
   ->execute()
   ->fetchAll();
-
   for($i=0;$i<count($story_data);$i++){
-    $story_data[$i]->count = get_comment_count($story_data[$i]->story_id);
+    $story_data[$i]->count = count(get_comment_count($story_data[$i]->story_id));
   }
 return $story_data; 
 }
@@ -277,9 +264,10 @@ function get_author_stories($name){
   $query->groupBy('story_id');
   $result = $query->execute()->fetchAll();
 
-
-  $comments= get_comment_count($result[0]->story_id);
+//echo '<pre>'; print_r($result); die();
+  
   for($i=0;$i<count($result);$i++){
+    $comments= count(($result[$i]->story_id));
     $arr[$i] = (array)$result[$i];
     $arr[$i]['count'] = $comments;
   }
